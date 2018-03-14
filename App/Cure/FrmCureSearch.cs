@@ -8,16 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace App.Dictionary
+namespace App.Cure
 {
-    public partial class FrmSubject : CCSkinMain
+    public partial class FrmCureSearch : CCSkinMain
     {
-        public FrmSubject()
+        public FrmCureSearch()
         {
             InitializeComponent();
         }
 
-        private void FrmSubject_Load(object sender, EventArgs e)
+        private void FrmCureSearch_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void skinButton1_Click(object sender, EventArgs e)
         {
 
         }

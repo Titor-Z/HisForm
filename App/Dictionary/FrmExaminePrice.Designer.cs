@@ -35,21 +35,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExaminePrice));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
             this.btnInsert = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
-            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
             this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
             this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinToolStrip1.SuspendLayout();
             this.skinPanel1.SuspendLayout();
@@ -74,11 +80,18 @@
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
             this.Column3,
+            this.Column2,
             this.Column5,
             this.Column6,
-            this.Column4});
+            this.Column4,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13});
             this.grd.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -103,42 +116,11 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grd.RowTemplate.Height = 23;
-            this.grd.Size = new System.Drawing.Size(792, 480);
+            this.grd.Size = new System.Drawing.Size(1192, 780);
             this.grd.TabIndex = 3;
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "院区名称";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "检查项目名称";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "拼音";
-            this.Column3.Name = "Column3";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "价格";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "成本";
-            this.Column6.Name = "Column6";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "是否可用";
-            this.Column4.Name = "Column4";
             // 
             // skinToolStrip1
             // 
@@ -184,7 +166,7 @@
             this.skinToolStrip1.Location = new System.Drawing.Point(4, 28);
             this.skinToolStrip1.Name = "skinToolStrip1";
             this.skinToolStrip1.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinToolStrip1.Size = new System.Drawing.Size(792, 40);
+            this.skinToolStrip1.Size = new System.Drawing.Size(1192, 40);
             this.skinToolStrip1.SkinAllColor = true;
             this.skinToolStrip1.TabIndex = 2;
             this.skinToolStrip1.Text = "skinToolStrip1";
@@ -240,7 +222,6 @@
             // 
             this.skinPanel1.BackColor = System.Drawing.Color.White;
             this.skinPanel1.BorderColor = System.Drawing.Color.White;
-            this.skinPanel1.Controls.Add(this.skinComboBox1);
             this.skinPanel1.Controls.Add(this.skinTextBox1);
             this.skinPanel1.Controls.Add(this.skinButton1);
             this.skinPanel1.ControlState = CCWin.SkinClass.ControlState.Normal;
@@ -251,19 +232,8 @@
             this.skinPanel1.Name = "skinPanel1";
             this.skinPanel1.NormlBack = null;
             this.skinPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.skinPanel1.Size = new System.Drawing.Size(792, 48);
+            this.skinPanel1.Size = new System.Drawing.Size(1192, 48);
             this.skinPanel1.TabIndex = 6;
-            // 
-            // skinComboBox1
-            // 
-            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox1.FormattingEnabled = true;
-            this.skinComboBox1.ItemHeight = 22;
-            this.skinComboBox1.Location = new System.Drawing.Point(8, 10);
-            this.skinComboBox1.Name = "skinComboBox1";
-            this.skinComboBox1.Size = new System.Drawing.Size(160, 28);
-            this.skinComboBox1.TabIndex = 8;
-            this.skinComboBox1.WaterText = "--请选择院区--";
             // 
             // skinTextBox1
             // 
@@ -275,7 +245,7 @@
             this.skinTextBox1.IsPasswordChat = '\0';
             this.skinTextBox1.IsSystemPasswordChar = false;
             this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(179, 10);
+            this.skinTextBox1.Location = new System.Drawing.Point(6, 10);
             this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
             this.skinTextBox1.MaxLength = 32767;
             this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
@@ -311,7 +281,7 @@
             this.skinButton1.BackColor = System.Drawing.Color.Transparent;
             this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton1.DownBack = null;
-            this.skinButton1.Location = new System.Drawing.Point(350, 10);
+            this.skinButton1.Location = new System.Drawing.Point(171, 10);
             this.skinButton1.MouseBack = null;
             this.skinButton1.Name = "skinButton1";
             this.skinButton1.NormlBack = null;
@@ -321,11 +291,77 @@
             this.skinButton1.UseVisualStyleBackColor = false;
             this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "名称";
+            this.Column1.Name = "Column1";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "拼音";
+            this.Column3.Name = "Column3";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "部位";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 120;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "医价编码";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "单位";
+            this.Column6.Name = "Column6";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "收费分类";
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "规格";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "缴费处";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "发票分类";
+            this.Column9.Name = "Column9";
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "执行科室";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "价格";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "成本";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "是否启用";
+            this.Column13.Name = "Column13";
+            // 
             // FrmExaminePrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 900);
             this.Controls.Add(this.grd);
             this.Controls.Add(this.skinPanel1);
             this.Controls.Add(this.skinToolStrip1);
@@ -347,12 +383,6 @@
         #endregion
 
         private CCWin.SkinControl.SkinDataGridView grd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private CCWin.SkinControl.SkinToolStrip skinToolStrip1;
         private System.Windows.Forms.ToolStripButton btnInsert;
         private System.Windows.Forms.ToolStripButton btnUpdate;
@@ -361,6 +391,18 @@
         private CCWin.SkinControl.SkinPanel skinPanel1;
         private CCWin.SkinControl.SkinTextBox skinTextBox1;
         private CCWin.SkinControl.SkinButton skinButton1;
-        private CCWin.SkinControl.SkinComboBox skinComboBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
     }
 }

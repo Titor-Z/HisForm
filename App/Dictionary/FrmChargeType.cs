@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace App.Dictionary
 {
-    public partial class FrmSubjectEdit : CCSkinMain
+    public partial class FrmChargeType : CCSkinMain
     {
-        public FrmSubjectEdit()
+        public FrmChargeType()
         {
             InitializeComponent();
         }
 
-        private void FrmSubjectEdit_Load(object sender, EventArgs e)
+        private void FrmSubject_Load(object sender, EventArgs e)
         {
 
         }

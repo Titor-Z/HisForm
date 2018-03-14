@@ -111,6 +111,24 @@
     </Compile>
     <Compile Include="Common\ConvertSpell.cs" />
     <Compile Include="Common\StringHelper.cs" />
+    <Compile Include="Cure\FrmCure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cure\FrmCure.Designer.cs">
+      <DependentUpon>FrmCure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cure\FrmCureReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cure\FrmCureReturn.Designer.cs">
+      <DependentUpon>FrmCureReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cure\FrmCureSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cure\FrmCureSearch.Designer.cs">
+      <DependentUpon>FrmCureSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dictionary\ClsMenu.cs" />
     <Compile Include="Dictionary\FrmAntibiosisLevel.cs">
       <SubType>Form</SubType>
@@ -268,6 +286,12 @@
     <Compile Include="Dictionary\FrmExaminePrice.Designer.cs">
       <DependentUpon>FrmExaminePrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dictionary\FrmExaminePriceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmExaminePriceEdit.Designer.cs">
+      <DependentUpon>FrmExaminePriceEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dictionary\FrmExamineTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -388,17 +412,17 @@
     <Compile Include="Dictionary\FrmSickEdit.Designer.cs">
       <DependentUpon>FrmSickEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dictionary\FrmSubject.cs">
+    <Compile Include="Dictionary\FrmChargeType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dictionary\FrmSubject.Designer.cs">
-      <DependentUpon>FrmSubject.cs</DependentUpon>
+    <Compile Include="Dictionary\FrmChargeType.Designer.cs">
+      <DependentUpon>FrmChargeType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dictionary\FrmSubjectEdit.cs">
+    <Compile Include="Dictionary\FrmChargeTypeEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dictionary\FrmSubjectEdit.Designer.cs">
-      <DependentUpon>FrmSubjectEdit.cs</DependentUpon>
+    <Compile Include="Dictionary\FrmChargeTypeEdit.Designer.cs">
+      <DependentUpon>FrmChargeTypeEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Dictionary\FrmSupplier.cs">
       <SubType>Form</SubType>
@@ -937,6 +961,15 @@
     <EmbeddedResource Include="Common\ComboboxProvinceCityCounty.resx">
       <DependentUpon>ComboboxProvinceCityCounty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cure\FrmCure.resx">
+      <DependentUpon>FrmCure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cure\FrmCureReturn.resx">
+      <DependentUpon>FrmCureReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cure\FrmCureSearch.resx">
+      <DependentUpon>FrmCureSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmAntibiosisLevel.resx">
       <DependentUpon>FrmAntibiosisLevel.cs</DependentUpon>
     </EmbeddedResource>
@@ -1015,6 +1048,9 @@
     <EmbeddedResource Include="Dictionary\FrmExaminePrice.resx">
       <DependentUpon>FrmExaminePrice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmExaminePriceEdit.resx">
+      <DependentUpon>FrmExaminePriceEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmExamineTemplate.resx">
       <DependentUpon>FrmExamineTemplate.cs</DependentUpon>
     </EmbeddedResource>
@@ -1075,11 +1111,11 @@
     <EmbeddedResource Include="Dictionary\FrmSickEdit.resx">
       <DependentUpon>FrmSickEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dictionary\FrmSubject.resx">
-      <DependentUpon>FrmSubject.cs</DependentUpon>
+    <EmbeddedResource Include="Dictionary\FrmChargeType.resx">
+      <DependentUpon>FrmChargeType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dictionary\FrmSubjectEdit.resx">
-      <DependentUpon>FrmSubjectEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Dictionary\FrmChargeTypeEdit.resx">
+      <DependentUpon>FrmChargeTypeEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmSupplier.resx">
       <DependentUpon>FrmSupplier.cs</DependentUpon>
@@ -1357,7 +1393,12 @@
     <Folder Include="Assay\" />
     <Folder Include="Cashier\" />
     <Folder Include="Clinic\" />
+<<<<<<< HEAD
+    <Folder Include="DrugHouse\" />
+    <Folder Include="DrugStore\" />
+=======
     <Folder Include="Cure\" />
+>>>>>>> Cure2
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
