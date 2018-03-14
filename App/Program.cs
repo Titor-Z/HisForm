@@ -34,7 +34,7 @@ namespace App {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
+			Application.Run(new App.Dictionary.FrmDrug());
 
 			//Application.Run(new App.Dictionary.FrmPart());
 			//Application.Run(new App.Dictionary.FrmUnit());

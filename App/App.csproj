@@ -202,6 +202,18 @@
     <Compile Include="Dictionary\FrmDoctorLevelEdit.Designer.cs">
       <DependentUpon>FrmDoctorLevelEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dictionary\FrmDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrug.Designer.cs">
+      <DependentUpon>FrmDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrugEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrugEdit.Designer.cs">
+      <DependentUpon>FrmDrugEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dictionary\FrmDrugHouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,6 +544,12 @@
     <Compile Include="DrugHouse\FrmDrugSpillPassEdit.Designer.cs">
       <DependentUpon>FrmDrugSpillPassEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="DrugHouse\FrmDrugStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugHouse\FrmDrugStock.Designer.cs">
+      <DependentUpon>FrmDrugStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="DrugStore\FrmDrugAllocatePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -615,6 +633,12 @@
     </Compile>
     <Compile Include="DrugStore\FrmDrugSpillPassEdit.Designer.cs">
       <DependentUpon>FrmDrugSpillPassEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStore\FrmDrugStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugStore\FrmDrugStock.Designer.cs">
+      <DependentUpon>FrmDrugStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Examine\FrmExamine.cs">
       <SubType>Form</SubType>
@@ -958,6 +982,12 @@
     <EmbeddedResource Include="Dictionary\FrmDoctorLevelEdit.resx">
       <DependentUpon>FrmDoctorLevelEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmDrug.resx">
+      <DependentUpon>FrmDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmDrugEdit.resx">
+      <DependentUpon>FrmDrugEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmDrugHouse.resx">
       <DependentUpon>FrmDrugHouse.cs</DependentUpon>
     </EmbeddedResource>
@@ -1123,6 +1153,9 @@
     <EmbeddedResource Include="DrugHouse\FrmDrugSpillPassEdit.resx">
       <DependentUpon>FrmDrugSpillPassEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DrugHouse\FrmDrugStock.resx">
+      <DependentUpon>FrmDrugStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DrugStore\FrmDrugAllocatePass.resx">
       <DependentUpon>FrmDrugAllocatePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -1164,6 +1197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DrugStore\FrmDrugSpillPassEdit.resx">
       <DependentUpon>FrmDrugSpillPassEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStore\FrmDrugStock.resx">
+      <DependentUpon>FrmDrugStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Examine\FrmExamine.resx">
       <DependentUpon>FrmExamine.cs</DependentUpon>

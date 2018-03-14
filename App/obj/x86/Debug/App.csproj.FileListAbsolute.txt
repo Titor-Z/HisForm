@@ -254,3 +254,6 @@ E:\vs\his_top\HisForm\App\obj\x86\Debug\App.DrugHouse.FrmDrugRefund.resources
 E:\vs\his_top\HisForm\App\obj\x86\Debug\App.DrugHouse.FrmDrugRefundEdit.resources
 E:\vs\his_top\HisForm\App\obj\x86\Debug\App.DrugHouse.FrmDrugSellRefundSearch.resources
 E:\vs\his_top\HisForm\App\obj\x86\Debug\App.DrugHouse.FrmDrugSellRefundSearchEdit.resources
+E:\vs\his_top\HisForm\App\obj\x86\Debug\App.Dictionary.FrmDrug.resources
+E:\vs\his_top\HisForm\App\obj\x86\Debug\App.Dictionary.FrmDrugEdit.resources
+E:\vs\his_top\HisForm\App\obj\x86\Debug\App.DrugHouse.FrmDrugStock.resources
