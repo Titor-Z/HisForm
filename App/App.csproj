@@ -77,17 +77,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CSkin">
-      <HintPath>..\..\第三方插件\CSkin 16.1.14.2\CSkin 2.0\CSkin.dll</HintPath>
-    </Reference>
-    <Reference Include="CSkin.16.1.14.2.Fakes">
-      <HintPath>FakesAssemblies\CSkin.16.1.14.2.Fakes.dll</HintPath>
+      <HintPath>bin\x86\Debug\CSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>bin\x86\Debug\dll\Newtonsoft.Json.dll</HintPath>
+      <HintPath>bin\x86\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -1376,6 +1373,7 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <Fakes Include="Fakes\CSkin.fakes" />
+    <Fakes Include="Fakes\CSkin01.fakes" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1393,12 +1391,6 @@
     <Folder Include="Assay\" />
     <Folder Include="Cashier\" />
     <Folder Include="Clinic\" />
-<<<<<<< HEAD
-    <Folder Include="DrugHouse\" />
-    <Folder Include="DrugStore\" />
-=======
-    <Folder Include="Cure\" />
->>>>>>> Cure2
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
