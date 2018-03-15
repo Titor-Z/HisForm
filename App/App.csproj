@@ -361,11 +361,11 @@
     <Compile Include="Dictionary\FrmPackEdit.Designer.cs">
       <DependentUpon>FrmPackEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dictionary\Frmpart.cs">
+    <Compile Include="Dictionary\FrmPart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dictionary\Frmpart.Designer.cs">
-      <DependentUpon>Frmpart.cs</DependentUpon>
+    <Compile Include="Dictionary\FrmPart.Designer.cs">
+      <DependentUpon>FrmPart.cs</DependentUpon>
     </Compile>
     <Compile Include="Dictionary\FrmPartEdit.cs">
       <SubType>Form</SubType>
@@ -1084,8 +1084,8 @@
     <EmbeddedResource Include="Dictionary\FrmPackEdit.resx">
       <DependentUpon>FrmPackEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dictionary\Frmpart.resx">
-      <DependentUpon>Frmpart.cs</DependentUpon>
+    <EmbeddedResource Include="Dictionary\FrmPart.resx">
+      <DependentUpon>FrmPart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmPartEdit.resx">
       <DependentUpon>FrmPartEdit.cs</DependentUpon>

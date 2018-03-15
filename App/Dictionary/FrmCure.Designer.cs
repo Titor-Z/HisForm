@@ -34,11 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCure));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
-            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
-            this.btnInsert = new System.Windows.Forms.ToolStripButton();
-            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
-            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.btnClose = new System.Windows.Forms.ToolStripButton();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +43,11 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.是否可用 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
+            this.btnInsert = new System.Windows.Forms.ToolStripButton();
+            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
+            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.btnClose = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinToolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -109,6 +109,51 @@
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "名称";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "拼音";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "医价编码";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "单位";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "收费科目";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "规格";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "财务分类";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "发票分类";
+            this.Column8.Name = "Column8";
+            // 
+            // 是否可用
+            // 
+            this.是否可用.HeaderText = "是否可用";
+            this.是否可用.Name = "是否可用";
+            // 
             // skinToolStrip1
             // 
             this.skinToolStrip1.Arrow = System.Drawing.Color.Black;
@@ -169,8 +214,9 @@
             this.btnInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(48, 37);
-            this.btnInsert.Text = "添加&(I)";
+            this.btnInsert.Text = "添加(&I)";
             this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
@@ -179,7 +225,7 @@
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(53, 37);
-            this.btnUpdate.Text = "修改&(U)";
+            this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -190,7 +236,7 @@
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(52, 37);
-            this.btnRefresh.Text = "刷新&(R)";
+            this.btnRefresh.Text = "刷新(&R)";
             this.btnRefresh.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -201,54 +247,10 @@
             this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(52, 37);
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "名称";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "拼音";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "医价编码";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "单位";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "收费科目";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "规格";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "财务分类";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "发票分类";
-            this.Column8.Name = "Column8";
-            // 
-            // 是否可用
-            // 
-            this.是否可用.HeaderText = "是否可用";
-            this.是否可用.Name = "是否可用";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // FrmCure
             // 
@@ -259,6 +261,7 @@
             this.Controls.Add(this.skinToolStrip1);
             this.Name = "FrmCure";
             this.ShowDrawIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "治疗项目定义";
             this.Load += new System.EventHandler(this.FrmCure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();

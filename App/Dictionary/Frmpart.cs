@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace App.Dictionary
 {
-    public partial class Frmpart : CCSkinMain
+    public partial class FrmPart : CCSkinMain
     {
-        public Frmpart()
+        public FrmPart()
         {
             InitializeComponent();
         }
@@ -20,6 +20,17 @@ namespace App.Dictionary
         private void Frmpart_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FrmPart frm = new FrmPart();
+            frm.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -81,9 +81,10 @@
             this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(52, 37);
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnUpdate
             // 
@@ -92,7 +93,7 @@
             this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(53, 37);
-            this.btnUpdate.Text = "修改&(U)";
+            this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -103,8 +104,9 @@
             this.btnInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(48, 37);
-            this.btnInsert.Text = "添加&(I)";
+            this.btnInsert.Text = "添加(&I)";
             this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // skinToolStrip1
             // 
@@ -158,6 +160,7 @@
             this.skinToolStrip1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
             this.skinToolStrip1.TitleRadius = 4;
             this.skinToolStrip1.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
+            this.skinToolStrip1.UseWaitCursor = true;
             // 
             // btnRefresh
             // 
@@ -166,7 +169,7 @@
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(52, 37);
-            this.btnRefresh.Text = "刷新&(R)";
+            this.btnRefresh.Text = "刷新(&R)";
             this.btnRefresh.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -203,10 +206,12 @@
             this.skinTextBox1.SkinTxt.Name = "BaseText";
             this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(210, 18);
             this.skinTextBox1.SkinTxt.TabIndex = 0;
+            this.skinTextBox1.SkinTxt.UseWaitCursor = true;
             this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.skinTextBox1.SkinTxt.WaterText = "编码/名称/拼音/电话/联系人";
             this.skinTextBox1.TabIndex = 7;
             this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.skinTextBox1.UseWaitCursor = true;
             this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.skinTextBox1.WaterText = "编码/名称/拼音/电话/联系人";
             this.skinTextBox1.WordWrap = true;
@@ -224,6 +229,7 @@
             this.skinButton1.TabIndex = 6;
             this.skinButton1.Text = "查询";
             this.skinButton1.UseVisualStyleBackColor = false;
+            this.skinButton1.UseWaitCursor = true;
             // 
             // skinPanel1
             // 
@@ -241,6 +247,7 @@
             this.skinPanel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.skinPanel1.Size = new System.Drawing.Size(1192, 48);
             this.skinPanel1.TabIndex = 12;
+            this.skinPanel1.UseWaitCursor = true;
             // 
             // Column10
             // 
@@ -350,6 +357,7 @@
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.grd.UseWaitCursor = true;
             // 
             // skinDataGridView1
             // 
@@ -408,6 +416,7 @@
             this.skinDataGridView1.TitleBack = null;
             this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
             this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.skinDataGridView1.UseWaitCursor = true;
             // 
             // dataGridViewTextBoxColumn1
             // 

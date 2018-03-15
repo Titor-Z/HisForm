@@ -21,5 +21,16 @@ namespace App.Cure
         {
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FrmCureReturn frm = new FrmCureReturn();
+            frm.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

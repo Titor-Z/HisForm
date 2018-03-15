@@ -35,9 +35,9 @@
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtFinanceType = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtFinanceTypeCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +51,9 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtFinanceType);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtFinanceTypeCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -102,7 +102,7 @@
             this.btnSave.NormlBack = null;
             this.btnSave.Size = new System.Drawing.Size(76, 23);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "保存&(S)";
+            this.btnSave.Text = "保存(&S)";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // chkIsPass
@@ -122,7 +122,7 @@
             this.chkIsPass.SelectedMouseBack = null;
             this.chkIsPass.SelectedNormlBack = null;
             this.chkIsPass.Size = new System.Drawing.Size(75, 21);
-            this.chkIsPass.TabIndex = 7;
+            this.chkIsPass.TabIndex = 2;
             this.chkIsPass.Text = "是否启用";
             this.chkIsPass.UseVisualStyleBackColor = false;
             // 
@@ -137,52 +137,53 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.NormlBack = null;
             this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // skinTextBox3
+            // txtFinanceType
             // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(125, 112);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtFinanceType.BackColor = System.Drawing.Color.Transparent;
+            this.txtFinanceType.DownBack = null;
+            this.txtFinanceType.Icon = null;
+            this.txtFinanceType.IconIsButton = false;
+            this.txtFinanceType.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtFinanceType.IsPasswordChat = '\0';
+            this.txtFinanceType.IsSystemPasswordChar = false;
+            this.txtFinanceType.Lines = new string[0];
+            this.txtFinanceType.Location = new System.Drawing.Point(125, 112);
+            this.txtFinanceType.Margin = new System.Windows.Forms.Padding(0);
+            this.txtFinanceType.MaxLength = 32767;
+            this.txtFinanceType.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtFinanceType.MouseBack = null;
+            this.txtFinanceType.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtFinanceType.Multiline = true;
+            this.txtFinanceType.Name = "txtFinanceType";
+            this.txtFinanceType.NormlBack = null;
+            this.txtFinanceType.Padding = new System.Windows.Forms.Padding(5);
+            this.txtFinanceType.ReadOnly = false;
+            this.txtFinanceType.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtFinanceType.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入名称";
-            this.skinTextBox3.TabIndex = 3;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入名称";
-            this.skinTextBox3.WordWrap = true;
+            this.txtFinanceType.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFinanceType.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFinanceType.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtFinanceType.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtFinanceType.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtFinanceType.SkinTxt.Multiline = true;
+            this.txtFinanceType.SkinTxt.Name = "BaseText";
+            this.txtFinanceType.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtFinanceType.SkinTxt.TabIndex = 0;
+            this.txtFinanceType.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtFinanceType.SkinTxt.WaterText = "请输入名称";
+            this.txtFinanceType.TabIndex = 1;
+            this.txtFinanceType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFinanceType.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtFinanceType.WaterText = "请输入名称";
+            this.txtFinanceType.WordWrap = true;
             // 
             // label3
             // 
@@ -195,47 +196,47 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "名称：";
             // 
-            // skinTextBox1
+            // txtFinanceTypeCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(125, 70);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtFinanceTypeCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtFinanceTypeCode.DownBack = null;
+            this.txtFinanceTypeCode.Icon = null;
+            this.txtFinanceTypeCode.IconIsButton = false;
+            this.txtFinanceTypeCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtFinanceTypeCode.IsPasswordChat = '\0';
+            this.txtFinanceTypeCode.IsSystemPasswordChar = false;
+            this.txtFinanceTypeCode.Lines = new string[0];
+            this.txtFinanceTypeCode.Location = new System.Drawing.Point(125, 70);
+            this.txtFinanceTypeCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtFinanceTypeCode.MaxLength = 32767;
+            this.txtFinanceTypeCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtFinanceTypeCode.MouseBack = null;
+            this.txtFinanceTypeCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtFinanceTypeCode.Multiline = false;
+            this.txtFinanceTypeCode.Name = "txtFinanceTypeCode";
+            this.txtFinanceTypeCode.NormlBack = null;
+            this.txtFinanceTypeCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtFinanceTypeCode.ReadOnly = false;
+            this.txtFinanceTypeCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtFinanceTypeCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入编号";
-            this.skinTextBox1.TabIndex = 1;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入编号";
-            this.skinTextBox1.WordWrap = true;
+            this.txtFinanceTypeCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFinanceTypeCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtFinanceTypeCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtFinanceTypeCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtFinanceTypeCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtFinanceTypeCode.SkinTxt.Name = "BaseText";
+            this.txtFinanceTypeCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtFinanceTypeCode.SkinTxt.TabIndex = 0;
+            this.txtFinanceTypeCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtFinanceTypeCode.SkinTxt.WaterText = "请输入编号";
+            this.txtFinanceTypeCode.TabIndex = 0;
+            this.txtFinanceTypeCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtFinanceTypeCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtFinanceTypeCode.WaterText = "请输入编号";
+            this.txtFinanceTypeCode.WordWrap = true;
             // 
             // label1
             // 
@@ -276,9 +277,9 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtFinanceType;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtFinanceTypeCode;
         private System.Windows.Forms.Label label1;
     }
 }

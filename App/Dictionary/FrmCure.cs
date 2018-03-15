@@ -21,5 +21,16 @@ namespace App.Dictionary
         {
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FrmCureEdit frm = new FrmCureEdit();
+            frm.ShowDialog();
+        }
     }
 }

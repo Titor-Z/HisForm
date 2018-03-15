@@ -21,5 +21,10 @@ namespace App.Cure
         {
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -35,9 +35,9 @@
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtConformationName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtConformationCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +51,9 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtConformationName);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtConformationCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -102,7 +102,7 @@
             this.btnSave.NormlBack = null;
             this.btnSave.Size = new System.Drawing.Size(76, 23);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "保存&(S)";
+            this.btnSave.Text = "保存(&S)";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // chkIsPass
@@ -122,7 +122,7 @@
             this.chkIsPass.SelectedMouseBack = null;
             this.chkIsPass.SelectedNormlBack = null;
             this.chkIsPass.Size = new System.Drawing.Size(75, 21);
-            this.chkIsPass.TabIndex = 7;
+            this.chkIsPass.TabIndex = 2;
             this.chkIsPass.Text = "是否启用";
             this.chkIsPass.UseVisualStyleBackColor = false;
             // 
@@ -137,52 +137,53 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.NormlBack = null;
             this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // skinTextBox3
+            // txtConformationName
             // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(125, 112);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtConformationName.BackColor = System.Drawing.Color.Transparent;
+            this.txtConformationName.DownBack = null;
+            this.txtConformationName.Icon = null;
+            this.txtConformationName.IconIsButton = false;
+            this.txtConformationName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtConformationName.IsPasswordChat = '\0';
+            this.txtConformationName.IsSystemPasswordChar = false;
+            this.txtConformationName.Lines = new string[0];
+            this.txtConformationName.Location = new System.Drawing.Point(125, 112);
+            this.txtConformationName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtConformationName.MaxLength = 32767;
+            this.txtConformationName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtConformationName.MouseBack = null;
+            this.txtConformationName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtConformationName.Multiline = true;
+            this.txtConformationName.Name = "txtConformationName";
+            this.txtConformationName.NormlBack = null;
+            this.txtConformationName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtConformationName.ReadOnly = false;
+            this.txtConformationName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtConformationName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入名称";
-            this.skinTextBox3.TabIndex = 3;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入名称";
-            this.skinTextBox3.WordWrap = true;
+            this.txtConformationName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConformationName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtConformationName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtConformationName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtConformationName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtConformationName.SkinTxt.Multiline = true;
+            this.txtConformationName.SkinTxt.Name = "BaseText";
+            this.txtConformationName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtConformationName.SkinTxt.TabIndex = 0;
+            this.txtConformationName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtConformationName.SkinTxt.WaterText = "请输入名称";
+            this.txtConformationName.TabIndex = 1;
+            this.txtConformationName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtConformationName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtConformationName.WaterText = "请输入名称";
+            this.txtConformationName.WordWrap = true;
             // 
             // label3
             // 
@@ -195,47 +196,47 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "名称：";
             // 
-            // skinTextBox1
+            // txtConformationCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(125, 70);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtConformationCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtConformationCode.DownBack = null;
+            this.txtConformationCode.Icon = null;
+            this.txtConformationCode.IconIsButton = false;
+            this.txtConformationCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtConformationCode.IsPasswordChat = '\0';
+            this.txtConformationCode.IsSystemPasswordChar = false;
+            this.txtConformationCode.Lines = new string[0];
+            this.txtConformationCode.Location = new System.Drawing.Point(125, 70);
+            this.txtConformationCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtConformationCode.MaxLength = 32767;
+            this.txtConformationCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtConformationCode.MouseBack = null;
+            this.txtConformationCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtConformationCode.Multiline = false;
+            this.txtConformationCode.Name = "txtConformationCode";
+            this.txtConformationCode.NormlBack = null;
+            this.txtConformationCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtConformationCode.ReadOnly = false;
+            this.txtConformationCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtConformationCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入编号";
-            this.skinTextBox1.TabIndex = 1;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入编号";
-            this.skinTextBox1.WordWrap = true;
+            this.txtConformationCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtConformationCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtConformationCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtConformationCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtConformationCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtConformationCode.SkinTxt.Name = "BaseText";
+            this.txtConformationCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtConformationCode.SkinTxt.TabIndex = 0;
+            this.txtConformationCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtConformationCode.SkinTxt.WaterText = "请输入编号";
+            this.txtConformationCode.TabIndex = 0;
+            this.txtConformationCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtConformationCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtConformationCode.WaterText = "请输入编号";
+            this.txtConformationCode.WordWrap = true;
             // 
             // label1
             // 
@@ -276,9 +277,9 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtConformationName;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtConformationCode;
         private System.Windows.Forms.Label label1;
     }
 }

@@ -34,7 +34,14 @@ namespace App {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
+<<<<<<< HEAD
 			Application.Run(new App.Dictionary.FrmDrug());
+=======
+
+            //Application.Run(new FrmCure());
+			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
+
+>>>>>>> MergeDrugDirectoryFiles
 
 			//Application.Run(new App.Dictionary.FrmPart());
 			//Application.Run(new App.Dictionary.FrmUnit());

@@ -35,9 +35,9 @@
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtAntibiosisLevelName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtAntibiosisLevelCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +51,9 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtAntibiosisLevelName);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtAntibiosisLevelCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -102,7 +102,7 @@
             this.btnSave.NormlBack = null;
             this.btnSave.Size = new System.Drawing.Size(76, 23);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "保存&(S)";
+            this.btnSave.Text = "保存(&S)";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // chkIsPass
@@ -122,7 +122,7 @@
             this.chkIsPass.SelectedMouseBack = null;
             this.chkIsPass.SelectedNormlBack = null;
             this.chkIsPass.Size = new System.Drawing.Size(75, 21);
-            this.chkIsPass.TabIndex = 7;
+            this.chkIsPass.TabIndex = 2;
             this.chkIsPass.Text = "是否启用";
             this.chkIsPass.UseVisualStyleBackColor = false;
             // 
@@ -137,52 +137,53 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.NormlBack = null;
             this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // skinTextBox3
+            // txtAntibiosisLevelName
             // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(125, 112);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtAntibiosisLevelName.BackColor = System.Drawing.Color.Transparent;
+            this.txtAntibiosisLevelName.DownBack = null;
+            this.txtAntibiosisLevelName.Icon = null;
+            this.txtAntibiosisLevelName.IconIsButton = false;
+            this.txtAntibiosisLevelName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtAntibiosisLevelName.IsPasswordChat = '\0';
+            this.txtAntibiosisLevelName.IsSystemPasswordChar = false;
+            this.txtAntibiosisLevelName.Lines = new string[0];
+            this.txtAntibiosisLevelName.Location = new System.Drawing.Point(125, 112);
+            this.txtAntibiosisLevelName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtAntibiosisLevelName.MaxLength = 32767;
+            this.txtAntibiosisLevelName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtAntibiosisLevelName.MouseBack = null;
+            this.txtAntibiosisLevelName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtAntibiosisLevelName.Multiline = true;
+            this.txtAntibiosisLevelName.Name = "txtAntibiosisLevelName";
+            this.txtAntibiosisLevelName.NormlBack = null;
+            this.txtAntibiosisLevelName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtAntibiosisLevelName.ReadOnly = false;
+            this.txtAntibiosisLevelName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAntibiosisLevelName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入名称";
-            this.skinTextBox3.TabIndex = 3;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入名称";
-            this.skinTextBox3.WordWrap = true;
+            this.txtAntibiosisLevelName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAntibiosisLevelName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAntibiosisLevelName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtAntibiosisLevelName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtAntibiosisLevelName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtAntibiosisLevelName.SkinTxt.Multiline = true;
+            this.txtAntibiosisLevelName.SkinTxt.Name = "BaseText";
+            this.txtAntibiosisLevelName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtAntibiosisLevelName.SkinTxt.TabIndex = 0;
+            this.txtAntibiosisLevelName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtAntibiosisLevelName.SkinTxt.WaterText = "请输入名称";
+            this.txtAntibiosisLevelName.TabIndex = 1;
+            this.txtAntibiosisLevelName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAntibiosisLevelName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtAntibiosisLevelName.WaterText = "请输入名称";
+            this.txtAntibiosisLevelName.WordWrap = true;
             // 
             // label3
             // 
@@ -195,47 +196,47 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "名称：";
             // 
-            // skinTextBox1
+            // txtAntibiosisLevelCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(125, 70);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtAntibiosisLevelCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtAntibiosisLevelCode.DownBack = null;
+            this.txtAntibiosisLevelCode.Icon = null;
+            this.txtAntibiosisLevelCode.IconIsButton = false;
+            this.txtAntibiosisLevelCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtAntibiosisLevelCode.IsPasswordChat = '\0';
+            this.txtAntibiosisLevelCode.IsSystemPasswordChar = false;
+            this.txtAntibiosisLevelCode.Lines = new string[0];
+            this.txtAntibiosisLevelCode.Location = new System.Drawing.Point(125, 70);
+            this.txtAntibiosisLevelCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtAntibiosisLevelCode.MaxLength = 32767;
+            this.txtAntibiosisLevelCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtAntibiosisLevelCode.MouseBack = null;
+            this.txtAntibiosisLevelCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtAntibiosisLevelCode.Multiline = false;
+            this.txtAntibiosisLevelCode.Name = "txtAntibiosisLevelCode";
+            this.txtAntibiosisLevelCode.NormlBack = null;
+            this.txtAntibiosisLevelCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtAntibiosisLevelCode.ReadOnly = false;
+            this.txtAntibiosisLevelCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAntibiosisLevelCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入编号";
-            this.skinTextBox1.TabIndex = 1;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入编号";
-            this.skinTextBox1.WordWrap = true;
+            this.txtAntibiosisLevelCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAntibiosisLevelCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAntibiosisLevelCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtAntibiosisLevelCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtAntibiosisLevelCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtAntibiosisLevelCode.SkinTxt.Name = "BaseText";
+            this.txtAntibiosisLevelCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtAntibiosisLevelCode.SkinTxt.TabIndex = 0;
+            this.txtAntibiosisLevelCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtAntibiosisLevelCode.SkinTxt.WaterText = "请输入编号";
+            this.txtAntibiosisLevelCode.TabIndex = 0;
+            this.txtAntibiosisLevelCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAntibiosisLevelCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtAntibiosisLevelCode.WaterText = "请输入编号";
+            this.txtAntibiosisLevelCode.WordWrap = true;
             // 
             // label1
             // 
@@ -276,9 +277,9 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtAntibiosisLevelName;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtAntibiosisLevelCode;
         private System.Windows.Forms.Label label1;
     }
 }

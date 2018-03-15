@@ -21,5 +21,16 @@ namespace App.Dictionary
         {
 
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FrmAssayTemplateEdit frm = new FrmAssayTemplateEdit();
+            frm.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

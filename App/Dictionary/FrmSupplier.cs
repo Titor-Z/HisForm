@@ -21,5 +21,11 @@ namespace App.Dictionary
         {
 
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            FrmSupplierEdit frm = new FrmSupplierEdit();
+            frm.ShowDialog();
+        }
     }
 }

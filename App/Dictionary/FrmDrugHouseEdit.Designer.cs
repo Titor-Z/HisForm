@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbHospitalId = new CCWin.SkinControl.SkinComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtDrugHouseName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtDrugHouseCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             this.skinGroupBox1.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.skinGroupBox1.Controls.Add(this.label7);
             this.skinGroupBox1.Controls.Add(this.label8);
-            this.skinGroupBox1.Controls.Add(this.skinComboBox1);
+            this.skinGroupBox1.Controls.Add(this.cmbHospitalId);
             this.skinGroupBox1.Controls.Add(this.label4);
             this.skinGroupBox1.Controls.Add(this.label6);
             this.skinGroupBox1.Controls.Add(this.checkedListBox1);
@@ -63,9 +63,9 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtDrugHouseName);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtDrugHouseCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -80,6 +80,60 @@
             this.skinGroupBox1.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox1.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(47, 175);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 17);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label8.Location = new System.Drawing.Point(57, 175);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 17);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "药品类型:";
+            // 
+            // cmbHospitalId
+            // 
+            this.cmbHospitalId.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbHospitalId.FormattingEnabled = true;
+            this.cmbHospitalId.Location = new System.Drawing.Point(125, 132);
+            this.cmbHospitalId.Name = "cmbHospitalId";
+            this.cmbHospitalId.Size = new System.Drawing.Size(185, 22);
+            this.cmbHospitalId.TabIndex = 10;
+            this.cmbHospitalId.WaterText = "选择院区";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(82, 135);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 17);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "院区：";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(74, 135);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 17);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "*";
+            // 
             // checkedListBox1
             // 
             this.checkedListBox1.FormattingEnabled = true;
@@ -87,16 +141,6 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(184, 84);
             this.checkedListBox1.TabIndex = 11;
-            // 
-            // skinComboBox1
-            // 
-            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox1.FormattingEnabled = true;
-            this.skinComboBox1.Location = new System.Drawing.Point(125, 132);
-            this.skinComboBox1.Name = "skinComboBox1";
-            this.skinComboBox1.Size = new System.Drawing.Size(185, 22);
-            this.skinComboBox1.TabIndex = 10;
-            this.skinComboBox1.WaterText = "选择院区";
             // 
             // label5
             // 
@@ -132,7 +176,7 @@
             this.btnSave.NormlBack = null;
             this.btnSave.Size = new System.Drawing.Size(76, 23);
             this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "保存&(S)";
+            this.btnSave.Text = "保存(&S)";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
             // chkIsPass
@@ -168,62 +212,52 @@
             this.btnClose.NormlBack = null;
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.Text = "关闭(&C)";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label4
+            // txtDrugHouseName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(82, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "院区：";
-            // 
-            // skinTextBox3
-            // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(125, 87);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtDrugHouseName.BackColor = System.Drawing.Color.Transparent;
+            this.txtDrugHouseName.DownBack = null;
+            this.txtDrugHouseName.Icon = null;
+            this.txtDrugHouseName.IconIsButton = false;
+            this.txtDrugHouseName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtDrugHouseName.IsPasswordChat = '\0';
+            this.txtDrugHouseName.IsSystemPasswordChar = false;
+            this.txtDrugHouseName.Lines = new string[0];
+            this.txtDrugHouseName.Location = new System.Drawing.Point(125, 87);
+            this.txtDrugHouseName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDrugHouseName.MaxLength = 32767;
+            this.txtDrugHouseName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtDrugHouseName.MouseBack = null;
+            this.txtDrugHouseName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtDrugHouseName.Multiline = true;
+            this.txtDrugHouseName.Name = "txtDrugHouseName";
+            this.txtDrugHouseName.NormlBack = null;
+            this.txtDrugHouseName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtDrugHouseName.ReadOnly = false;
+            this.txtDrugHouseName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDrugHouseName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入拼音";
-            this.skinTextBox3.TabIndex = 3;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入拼音";
-            this.skinTextBox3.WordWrap = true;
+            this.txtDrugHouseName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDrugHouseName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDrugHouseName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtDrugHouseName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtDrugHouseName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtDrugHouseName.SkinTxt.Multiline = true;
+            this.txtDrugHouseName.SkinTxt.Name = "BaseText";
+            this.txtDrugHouseName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtDrugHouseName.SkinTxt.TabIndex = 0;
+            this.txtDrugHouseName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtDrugHouseName.SkinTxt.WaterText = "请输入药房名称";
+            this.txtDrugHouseName.TabIndex = 3;
+            this.txtDrugHouseName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDrugHouseName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtDrugHouseName.WaterText = "请输入药房名称";
+            this.txtDrugHouseName.WordWrap = true;
             // 
             // label3
             // 
@@ -234,49 +268,49 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "模块名称:";
+            this.label3.Text = "药房名称:";
             // 
-            // skinTextBox1
+            // txtDrugHouseCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(125, 43);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtDrugHouseCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtDrugHouseCode.DownBack = null;
+            this.txtDrugHouseCode.Icon = null;
+            this.txtDrugHouseCode.IconIsButton = false;
+            this.txtDrugHouseCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtDrugHouseCode.IsPasswordChat = '\0';
+            this.txtDrugHouseCode.IsSystemPasswordChar = false;
+            this.txtDrugHouseCode.Lines = new string[0];
+            this.txtDrugHouseCode.Location = new System.Drawing.Point(125, 43);
+            this.txtDrugHouseCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDrugHouseCode.MaxLength = 32767;
+            this.txtDrugHouseCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtDrugHouseCode.MouseBack = null;
+            this.txtDrugHouseCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtDrugHouseCode.Multiline = false;
+            this.txtDrugHouseCode.Name = "txtDrugHouseCode";
+            this.txtDrugHouseCode.NormlBack = null;
+            this.txtDrugHouseCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtDrugHouseCode.ReadOnly = false;
+            this.txtDrugHouseCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDrugHouseCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入项目名称";
-            this.skinTextBox1.TabIndex = 1;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入项目名称";
-            this.skinTextBox1.WordWrap = true;
+            this.txtDrugHouseCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDrugHouseCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDrugHouseCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtDrugHouseCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtDrugHouseCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtDrugHouseCode.SkinTxt.Name = "BaseText";
+            this.txtDrugHouseCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtDrugHouseCode.SkinTxt.TabIndex = 0;
+            this.txtDrugHouseCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtDrugHouseCode.SkinTxt.WaterText = "请输入项目名称";
+            this.txtDrugHouseCode.TabIndex = 1;
+            this.txtDrugHouseCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtDrugHouseCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtDrugHouseCode.WaterText = "请输入项目名称";
+            this.txtDrugHouseCode.WordWrap = true;
             // 
             // label1
             // 
@@ -288,39 +322,6 @@
             this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "药房编码：";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(74, 135);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 17);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "*";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(47, 175);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "*";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(57, 175);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 17);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "药品类型:";
             // 
             // FrmDrugHouseEdit
             // 
@@ -347,16 +348,16 @@
 
         private CCWin.SkinControl.SkinGroupBox skinGroupBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private CCWin.SkinControl.SkinComboBox skinComboBox1;
+        private CCWin.SkinControl.SkinComboBox cmbHospitalId;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
         private System.Windows.Forms.Label label4;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtDrugHouseName;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtDrugHouseCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

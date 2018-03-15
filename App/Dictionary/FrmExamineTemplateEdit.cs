@@ -21,5 +21,15 @@ namespace App.Dictionary
         {
 
         }
+
+        private void skinGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
