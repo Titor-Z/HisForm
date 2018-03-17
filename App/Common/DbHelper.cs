@@ -37,7 +37,7 @@ namespace App.Common {
 			}
 		}
 		//****************************************************************************************************
-		//打开数据库
+		//打开 mssql 数据库
 		private SqlConnection openMssqlConn() {
 			if (Program.mssqlConn.State == ConnectionState.Closed) {
 				string strConn = "Data Source=" + Program.strDbHost + "; Initial Catalog=" + Program.strDbName + "; User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + ";";
@@ -47,15 +47,16 @@ namespace App.Common {
 				try {
 					Program.mssqlConn.Open();
 				} catch (Exception ex) {
-					Console.WriteLine(ex.Message.ToString());
+					//Console.WriteLine(ex.Message.ToString());
 				} finally {
-					Program.mssqlConn.Close();
+					//Program.mssqlConn.Close();
 				}
 			}
 
 			return (Program.mssqlConn);
 		}
 		//****************************************************************************************************
+		//打开 oracle 数据库
 		private OracleConnection openOracleConn() {
 			if (Program.oracleConn.State == ConnectionState.Closed) {
 				string connString = "User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + "; Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=" + Program.strDbHost + ")(PORT=" + Program.strDbProt + ")))(CONNECT_DATA=(SERVICE_NAME=" + Program.strDbName + ")));";
@@ -65,9 +66,9 @@ namespace App.Common {
 				try {
 					Program.oracleConn.Open();
 				} catch (Exception ex) {
-					Console.WriteLine(ex.Message.ToString());
+					//Console.WriteLine(ex.Message.ToString());
 				} finally {
-					Program.oracleConn.Close();
+					//Program.oracleConn.Close();
 				}
 			}
 
@@ -187,8 +188,6 @@ namespace App.Common {
 
 					break;
 				case "oracle":
-					Console.WriteLine(parseSelectSql("select"));
-
 					OracleDataAdapter oracleDataAdapter = new OracleDataAdapter(parseSelectSql("select"), Program.oracleConn);
 					oracleDataAdapter.Fill(ds);
 
@@ -397,20 +396,19 @@ namespace App.Common {
 			return (n);
 		}
 		//****************************************************************************************************
-		private string parseSelectSql(string strType = "select") {
+		private string parseSelectSql(string strSelectType = "select") {
 			string strSql = "select ";
 
-			if (strType == "find") {
-				strSql += " top 1 ";
+			if ((Program.strDbType == "access") || (Program.strDbType == "mssql")) {
+				if (strSelectType == "find") {
+					strSql += " top 1 ";
+				}
 			}
 
 			strSql += parseField();
 			strSql += parseTable();
-			strSql += parseWhere();
+			strSql += parseWhere(strSelectType);
 			strSql += parseOrder();
-
-			//Function.showMessage(strSql);
-			//Console.WriteLine(strSql);
 
 			return (strSql);
 		}
@@ -444,7 +442,7 @@ namespace App.Common {
 			return (str);
 		}
 		//****************************************************************************************************
-		private string parseWhere() {
+		private string parseWhere(string strSelectType = "select") {
 			string str = "";
 
 			if (strWhere.Trim() != "") {
@@ -452,6 +450,18 @@ namespace App.Common {
 					str = " where " + Program.strDbPrefix + strTable + "." + strWhere;
 				} else {
 					str = " where " + strWhere;
+				}
+			}
+
+			if (Program.strDbType == "oracle") {
+				if (strSelectType == "find") {
+					if (str == "") {
+						str = " where ";
+					} else {
+						str += " and ";
+					}
+					
+					str += "(rownum <= 1)";
 				}
 			}
 
