@@ -9,10 +9,10 @@ using System.Xml;
 
 namespace App {
 	static class Program {
-		public static OleDbConnection oleDbConnection = new OleDbConnection();
-		public static SqlConnection mssqlConn = new SqlConnection();
+		public static OleDbConnection oledbConnection = new OleDbConnection();
+		public static SqlConnection sqlConn = new SqlConnection();
 		public static OracleConnection oracleConn = new OracleConnection();
-		public static MySqlConnection mySqlConn = new MySqlConnection();
+		public static MySqlConnection mysqlConn = new MySqlConnection();
 
 		public static string strAppName;
 		public static string strDbType, strDbHost, strDbProt, strDbPath, strDbName, strDbUsername, strDbPassword, strDbPrefix;
@@ -51,7 +51,7 @@ namespace App {
 			Application.SetCompatibleTextRenderingDefault(false);
 
 			//Application.Run(new App.FrmLogin());
-			///Application.Run(new App.FrmMain());
+			Application.Run(new App.FrmMain());
 
 			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
 
@@ -62,7 +62,7 @@ namespace App {
 
 			//Application.Run(new FrmPassword());
 
-			Application.Run(new FrmHospital());
+			//Application.Run(new FrmHospital());
 			//Application.Run(new FrmHospitalEdit(3));
 
 			//Application.Run(new FrmDepartment());

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.OracleClient;
 using System.Data.SqlClient;
 using System.Reflection;
@@ -21,6 +23,7 @@ namespace App.Common {
 		public DbHelper() {
 			switch (Program.strDbType) {
 				case "access":
+					openOleDbConn();
 
 					break;
 				case "mssql":
@@ -32,57 +35,93 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					openMysqlConn();
 
 					break;
 			}
 		}
 		//****************************************************************************************************
-		//打开 mssql 数据库
-		private SqlConnection openMssqlConn() {
-			if (Program.mssqlConn.State == ConnectionState.Closed) {
-				string strConn = "Data Source=" + Program.strDbHost + "; Initial Catalog=" + Program.strDbName + "; User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + ";";
-				SqlConnection mssqlConn = new SqlConnection(strConn);
-				Program.mssqlConn = mssqlConn;
+		//打开 access 数据库
+		private OleDbConnection openOleDbConn() {
+			if (Program.oledbConnection.State == ConnectionState.Closed) {
+				string strConn = "";
+				Program.oledbConnection.ConnectionString = strConn;
 
 				try {
-					Program.mssqlConn.Open();
+					Program.oledbConnection.Open();
 				} catch (Exception ex) {
 					//Console.WriteLine(ex.Message.ToString());
 				} finally {
-					//Program.mssqlConn.Close();
+					
 				}
 			}
 
-			return (Program.mssqlConn);
+			return (Program.oledbConnection);
+		}
+		//****************************************************************************************************
+		//打开 mssql 数据库
+		private SqlConnection openMssqlConn() {
+			if (Program.sqlConn.State == ConnectionState.Closed) {
+				string strConn = "Data Source=" + Program.strDbHost + "; Initial Catalog=" + Program.strDbName + "; User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + ";";
+				Program.sqlConn.ConnectionString = strConn;
+
+				try {
+					Program.sqlConn.Open();
+				} catch (Exception ex) {
+					//Console.WriteLine(ex.Message.ToString());
+				} finally {
+					
+				}
+			}
+
+			return (Program.sqlConn);
 		}
 		//****************************************************************************************************
 		//打开 oracle 数据库
 		private OracleConnection openOracleConn() {
 			if (Program.oracleConn.State == ConnectionState.Closed) {
-				string connString = "User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + "; Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=" + Program.strDbHost + ")(PORT=" + Program.strDbProt + ")))(CONNECT_DATA=(SERVICE_NAME=" + Program.strDbName + ")));";
-				OracleConnection oracleConn = new OracleConnection(connString);
-				Program.oracleConn = oracleConn;
+				string strConn = "User ID=" + Program.strDbUsername + "; Password=" + Program.strDbPassword + "; Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=" + Program.strDbHost + ")(PORT=" + Program.strDbProt + ")))(CONNECT_DATA=(SERVICE_NAME=" + Program.strDbName + ")));";
+				Program.oracleConn.ConnectionString = strConn;
 
 				try {
 					Program.oracleConn.Open();
 				} catch (Exception ex) {
 					//Console.WriteLine(ex.Message.ToString());
 				} finally {
-					//Program.oracleConn.Close();
+					
 				}
 			}
 
 			return (Program.oracleConn);
 		}
 		//****************************************************************************************************
+		//打开 mysql 数据库
+		private MySqlConnection openMysqlConn() {
+			if (Program.mysqlConn.State == ConnectionState.Closed) {
+				string strConn = "";
+				Program.mysqlConn.ConnectionString = strConn;
+
+				try {
+					Program.oracleConn.Open();
+				} catch (Exception ex) {
+					//Console.WriteLine(ex.Message.ToString());
+				} finally {
+					
+				}
+			}
+
+			return (Program.mysqlConn);
+		}
+		//****************************************************************************************************
 		//关闭数据库
 		public void closeConn() {
 			switch (Program.strDbType) {
 				case "access":
+					Program.oledbConnection.Close();
 
 					break;
 				case "mssql":
-					Program.mssqlConn.Close();
+					Program.sqlConn.Close();
 
 					break;
 				case "oracle":
@@ -90,6 +129,7 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					Program.mysqlConn.Close();
 
 					break;
 			}
@@ -154,10 +194,12 @@ namespace App.Common {
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbCommand oleDbCommand = new OleDbCommand(strSql, Program.oledbConnection);
+					n = oleDbCommand.ExecuteNonQuery();
 
 					break;
 				case "mssql":
-					SqlCommand mssqlCommand = new SqlCommand(strSql, Program.mssqlConn);
+					SqlCommand mssqlCommand = new SqlCommand(strSql, Program.sqlConn);
 					n = mssqlCommand.ExecuteNonQuery();
 
 					break;
@@ -167,6 +209,8 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					MySqlCommand mySqlCommand = new MySqlCommand(strSql, Program.mysqlConn);
+					n = mySqlCommand.ExecuteNonQuery();
 
 					break;
 			}
@@ -180,10 +224,12 @@ namespace App.Common {
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter(parseSelectSql("select"), Program.oledbConnection);
+					oleDbDataAdapter.Fill(ds);
 
 					break;
 				case "mssql":
-					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(parseSelectSql("select"), Program.mssqlConn);
+					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(parseSelectSql("select"), Program.sqlConn);
 					sqlDataAdapter.Fill(ds);
 
 					break;
@@ -193,6 +239,8 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(parseSelectSql("select"), Program.mysqlConn);
+					mySqlDataAdapter.Fill(ds);
 
 					break;
 			}
@@ -214,10 +262,12 @@ namespace App.Common {
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbDataAdapter oleDbDataAdapter = new OleDbDataAdapter(parseSelectSql("find"), Program.oledbConnection);
+					oleDbDataAdapter.Fill(ds);
 
 					break;
 				case "mssql":
-					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(parseSelectSql("find"), Program.mssqlConn);
+					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(parseSelectSql("find"), Program.sqlConn);
 					sqlDataAdapter.Fill(ds);
 
 					break;
@@ -227,6 +277,8 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					MySqlDataAdapter mysqlDataAdapter = new MySqlDataAdapter(parseSelectSql("find"), Program.mysqlConn);
+					mysqlDataAdapter.Fill(ds);
 
 					break;
 			}
@@ -295,10 +347,12 @@ namespace App.Common {
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbCommand oleDbCommand = new OleDbCommand(strSql, Program.oledbConnection);
+					intRows = oleDbCommand.ExecuteNonQuery();
 
 					break;
 				case "mssql":
-					SqlCommand sqlCommand = new SqlCommand(strSql, Program.mssqlConn);
+					SqlCommand sqlCommand = new SqlCommand(strSql, Program.sqlConn);
 					intRows = sqlCommand.ExecuteNonQuery();
 
 					break;
@@ -308,6 +362,8 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					MySqlCommand mysqlCommand = new MySqlCommand(strSql, Program.mysqlConn);
+					intRows = mysqlCommand.ExecuteNonQuery();
 
 					break;
 			}
@@ -318,22 +374,27 @@ namespace App.Common {
 		//查找字段
 		public string getField(string strField) {
 			DataSet ds = new DataSet();
+			string strSql = parseSelectSql("find");
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbDataAdapter oledbDataAdapter = new OleDbDataAdapter(strSql, Program.oledbConnection);
+					oledbDataAdapter.Fill(ds);
 
 					break;
 				case "mssql":
-					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(parseSelectSql("find"), Program.mssqlConn);
+					SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(strSql, Program.sqlConn);
 					sqlDataAdapter.Fill(ds);
 
 					break;
 				case "oracle":
-					OracleDataAdapter oracleDataAdapter = new OracleDataAdapter(parseSelectSql("find"), Program.oracleConn);
+					OracleDataAdapter oracleDataAdapter = new OracleDataAdapter(strSql, Program.oracleConn);
 					oracleDataAdapter.Fill(ds);
 
 					break;
 				case "mysql":
+					MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter(strSql, Program.mysqlConn);
+					mySqlDataAdapter.Fill(ds);
 
 					break;
 			}
@@ -376,10 +437,12 @@ namespace App.Common {
 
 			switch (Program.strDbType) {
 				case "access":
+					OleDbCommand oledbCommand = new OleDbCommand(strSql, Program.oledbConnection);
+					n = oledbCommand.ExecuteNonQuery();
 
 					break;
 				case "mssql":
-					SqlCommand sqlCommand = new SqlCommand(strSql, Program.mssqlConn);
+					SqlCommand sqlCommand = new SqlCommand(strSql, Program.sqlConn);
 					n = sqlCommand.ExecuteNonQuery();
 
 					break;
@@ -389,11 +452,67 @@ namespace App.Common {
 
 					break;
 				case "mysql":
+					MySqlCommand mysqlCommand = new MySqlCommand(strSql, Program.mysqlConn);
+					n = mysqlCommand.ExecuteNonQuery();
 
 					break;
 			}
 
 			return (n);
+		}
+		//****************************************************************************************************
+		//事务
+		public bool getTransaction() {
+			bool isSuccess = false;
+
+			switch (Program.strDbType) {
+				case "access":
+					OleDbTransaction oledbTransaction = Program.oledbConnection.BeginTransaction();
+					try {
+						oledbTransaction.Commit();
+
+						isSuccess = true;
+					} catch {
+						oledbTransaction.Rollback();
+					}
+
+					break;
+				case "mssql":
+					SqlTransaction mssqlTransaction = Program.sqlConn.BeginTransaction();
+					try {
+						mssqlTransaction.Commit();
+
+						isSuccess = true;
+					} catch {
+						mssqlTransaction.Rollback();
+					}
+
+					break;
+				case "oracle":
+					OracleTransaction oracleTransaction = Program.oracleConn.BeginTransaction();
+					try {
+						oracleTransaction.Commit();
+
+						isSuccess = true;
+					} catch {
+						oracleTransaction.Rollback();
+					}
+
+					break;
+				case "mysql":
+					MySqlTransaction mysqlTransaction = Program.mysqlConn.BeginTransaction();
+					try {
+						mysqlTransaction.Commit();
+
+						isSuccess = true;
+					} catch {
+						mysqlTransaction.Rollback();
+					}
+
+					break;
+			}
+
+			return (isSuccess);
 		}
 		//****************************************************************************************************
 		private string parseSelectSql(string strSelectType = "select") {
