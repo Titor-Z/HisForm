@@ -64,14 +64,14 @@ namespace App.Dictionary {
 				return;
 			}
 
-			bool bolIsPass = chkIsPass.Checked;
+			int intIsPass = Convert.ToInt32(chkIsPass.Checked);
 			
 			Hashtable ht = new Hashtable();
 			ht.Add("id", intId);
 			ht.Add("hospitalCode", strHospitalCode);
 			ht.Add("hospitalName", strHospitalName);
 			ht.Add("spell", strSpell);
-			ht.Add("isPass", bolIsPass);
+			ht.Add("isPass", intIsPass);
 			
 			int intRow = new ModHospital().setSave(ht);
 			if (intRow == 0) {

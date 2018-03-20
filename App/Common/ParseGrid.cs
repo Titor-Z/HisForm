@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace App.Common {
 	class ParseGrid {
@@ -6,7 +7,7 @@ namespace App.Common {
 		//显示启用
 		public static void showPass(DataGridView grd, DataGridViewCellFormattingEventArgs e) {
 			if (grd.Columns[e.ColumnIndex].DataPropertyName == "isPass") {
-				if (e.Value.ToString() == "True") {
+				if (Convert.ToInt32(e.Value) == 1) {
 					e.Value = "启用";
 				} else {
 					e.Value = "禁用";
