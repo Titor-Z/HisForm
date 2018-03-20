@@ -1,5 +1,5 @@
 ﻿using App.Dictionary;
-using MySql.Data.MySqlClient;
+using App.Guidance;
 using System;
 using System.Data.OleDb;
 using System.Data.OracleClient;
@@ -9,10 +9,10 @@ using System.Xml;
 
 namespace App {
 	static class Program {
-		public static OleDbConnection oledbConnection = new OleDbConnection();
-		public static SqlConnection sqlConn = new SqlConnection();
+		public static OleDbConnection oleConn = new OleDbConnection();
+		public static SqlConnection mssqlConn = new SqlConnection();
 		public static OracleConnection oracleConn = new OracleConnection();
-		public static MySqlConnection mysqlConn = new MySqlConnection();
+		//public static MysqlConnector mysqlconn = new MysqlConnector();
 
 		public static string strAppName;
 		public static string strDbType, strDbHost, strDbProt, strDbPath, strDbName, strDbUsername, strDbPassword, strDbPrefix;
@@ -27,6 +27,7 @@ namespace App {
 		public static string strRealname = "";
 
 		public static XmlDocument xmlApp = new XmlDocument();
+
 		//****************************************************************************************************
 		/// <summary>
 		/// 应用程序的主入口点。
@@ -38,7 +39,7 @@ namespace App {
 
 			strAppName = xmlApp.SelectSingleNode("/config/system/appName").InnerText;
 
-			strDbType = xmlApp.SelectSingleNode("/config/database/dbType").InnerText.ToLower();
+			strDbType = xmlApp.SelectSingleNode("/config/database/dbType").InnerText;
 			strDbHost = xmlApp.SelectSingleNode("/config/database/dbHost").InnerText;
 			strDbProt = xmlApp.SelectSingleNode("/config/database/dbProt").InnerText;
 			strDbPath = xmlApp.SelectSingleNode("/config/database/dbPath").InnerText;
@@ -84,7 +85,7 @@ namespace App {
 			//Application.Run(new FrmPassword());
 
 			//Application.Run(new FrmHospital());
-			//Application.Run(new FrmHospitalEdit(3));
+			//Application.Run(new FrmHospitalEdit(0));
 
 			//Application.Run(new FrmDepartment());
 			//Application.Run(new FrmDepartmentEdit(20));
