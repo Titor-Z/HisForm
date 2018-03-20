@@ -48,7 +48,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ccbMedicineCode = new CCWin.SkinControl.SkinTextBox();
+            this.ccbMedicineCodeId = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbPartyId = new CCWin.SkinControl.SkinComboBox();
             this.skinListBox1 = new CCWin.SkinControl.SkinListBox();
@@ -288,7 +288,7 @@
             this.skinGroupBox1.Controls.Add(this.label21);
             this.skinGroupBox1.Controls.Add(this.label22);
             this.skinGroupBox1.Controls.Add(this.label2);
-            this.skinGroupBox1.Controls.Add(this.ccbMedicineCode);
+            this.skinGroupBox1.Controls.Add(this.ccbMedicineCodeId);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Controls.Add(this.cmbPartyId);
             this.skinGroupBox1.Controls.Add(this.skinListBox1);
@@ -423,47 +423,47 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "*";
             // 
-            // ccbMedicineCode
+            // ccbMedicineCodeId
             // 
-            this.ccbMedicineCode.BackColor = System.Drawing.Color.Transparent;
-            this.ccbMedicineCode.DownBack = null;
-            this.ccbMedicineCode.Icon = null;
-            this.ccbMedicineCode.IconIsButton = false;
-            this.ccbMedicineCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.ccbMedicineCode.IsPasswordChat = '\0';
-            this.ccbMedicineCode.IsSystemPasswordChar = false;
-            this.ccbMedicineCode.Lines = new string[0];
-            this.ccbMedicineCode.Location = new System.Drawing.Point(163, 176);
-            this.ccbMedicineCode.Margin = new System.Windows.Forms.Padding(0);
-            this.ccbMedicineCode.MaxLength = 32767;
-            this.ccbMedicineCode.MinimumSize = new System.Drawing.Size(28, 28);
-            this.ccbMedicineCode.MouseBack = null;
-            this.ccbMedicineCode.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.ccbMedicineCode.Multiline = false;
-            this.ccbMedicineCode.Name = "ccbMedicineCode";
-            this.ccbMedicineCode.NormlBack = null;
-            this.ccbMedicineCode.Padding = new System.Windows.Forms.Padding(5);
-            this.ccbMedicineCode.ReadOnly = false;
-            this.ccbMedicineCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.ccbMedicineCode.Size = new System.Drawing.Size(186, 28);
+            this.ccbMedicineCodeId.BackColor = System.Drawing.Color.Transparent;
+            this.ccbMedicineCodeId.DownBack = null;
+            this.ccbMedicineCodeId.Icon = null;
+            this.ccbMedicineCodeId.IconIsButton = false;
+            this.ccbMedicineCodeId.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.ccbMedicineCodeId.IsPasswordChat = '\0';
+            this.ccbMedicineCodeId.IsSystemPasswordChar = false;
+            this.ccbMedicineCodeId.Lines = new string[0];
+            this.ccbMedicineCodeId.Location = new System.Drawing.Point(163, 176);
+            this.ccbMedicineCodeId.Margin = new System.Windows.Forms.Padding(0);
+            this.ccbMedicineCodeId.MaxLength = 32767;
+            this.ccbMedicineCodeId.MinimumSize = new System.Drawing.Size(28, 28);
+            this.ccbMedicineCodeId.MouseBack = null;
+            this.ccbMedicineCodeId.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.ccbMedicineCodeId.Multiline = false;
+            this.ccbMedicineCodeId.Name = "ccbMedicineCodeId";
+            this.ccbMedicineCodeId.NormlBack = null;
+            this.ccbMedicineCodeId.Padding = new System.Windows.Forms.Padding(5);
+            this.ccbMedicineCodeId.ReadOnly = false;
+            this.ccbMedicineCodeId.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.ccbMedicineCodeId.Size = new System.Drawing.Size(186, 28);
             // 
             // 
             // 
-            this.ccbMedicineCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ccbMedicineCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ccbMedicineCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.ccbMedicineCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.ccbMedicineCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.ccbMedicineCode.SkinTxt.Name = "BaseText";
-            this.ccbMedicineCode.SkinTxt.Size = new System.Drawing.Size(176, 18);
-            this.ccbMedicineCode.SkinTxt.TabIndex = 0;
-            this.ccbMedicineCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.ccbMedicineCode.SkinTxt.WaterText = "请输入医价编码";
-            this.ccbMedicineCode.TabIndex = 2;
-            this.ccbMedicineCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.ccbMedicineCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.ccbMedicineCode.WaterText = "请输入医价编码";
-            this.ccbMedicineCode.WordWrap = true;
+            this.ccbMedicineCodeId.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ccbMedicineCodeId.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ccbMedicineCodeId.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.ccbMedicineCodeId.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.ccbMedicineCodeId.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.ccbMedicineCodeId.SkinTxt.Name = "BaseText";
+            this.ccbMedicineCodeId.SkinTxt.Size = new System.Drawing.Size(176, 18);
+            this.ccbMedicineCodeId.SkinTxt.TabIndex = 0;
+            this.ccbMedicineCodeId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.ccbMedicineCodeId.SkinTxt.WaterText = "请输入医价编码";
+            this.ccbMedicineCodeId.TabIndex = 2;
+            this.ccbMedicineCodeId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ccbMedicineCodeId.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.ccbMedicineCodeId.WaterText = "请输入医价编码";
+            this.ccbMedicineCodeId.WordWrap = true;
             // 
             // label1
             // 
@@ -775,7 +775,7 @@
         private System.Windows.Forms.Label label26;
         private CCWin.SkinControl.SkinComboBox cmbPartyId;
         private System.Windows.Forms.Label label2;
-        private CCWin.SkinControl.SkinTextBox ccbMedicineCode;
+        private CCWin.SkinControl.SkinTextBox ccbMedicineCodeId;
         private System.Windows.Forms.Label label1;
         private CCWin.SkinControl.SkinTextBox txtSpace;
         private System.Windows.Forms.Label label21;

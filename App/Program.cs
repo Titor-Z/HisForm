@@ -51,6 +51,7 @@ namespace App {
 			Application.SetCompatibleTextRenderingDefault(false);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             //Application.Run(new App.FrmLogin());
             //Application.Run(new App.FrmMain());
             Application.Run(new FrmPart());
@@ -62,6 +63,10 @@ namespace App {
 			//Application.Run(new App.FrmLogin());
 			///Application.Run(new App.FrmMain());
 >>>>>>> pr/5
+=======
+			//Application.Run(new App.FrmLogin());
+			Application.Run(new App.FrmMain());
+>>>>>>> parent of 19c8a7b... changes
 
 			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
 

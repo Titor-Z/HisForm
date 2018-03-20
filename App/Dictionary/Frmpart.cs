@@ -1,11 +1,18 @@
-﻿using App.Model;
-using CCWin;
+﻿using CCWin;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
 
-namespace App.Dictionary {
+namespace App.Dictionary
+{
     public partial class FrmPart : CCSkinMain
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         //****************************************************************************************************
         //委托：
@@ -24,38 +31,18 @@ namespace App.Dictionary {
             get; set;
         }
 >>>>>>> pr/5
+=======
+>>>>>>> parent of 19c8a7b... changes
         public FrmPart()
         {
             InitializeComponent();
         }
 <<<<<<< HEAD
 
-        //****************************************************************************************************
-        // 显示数据：
         private void Frmpart_Load(object sender, EventArgs e)
         {
-            showData();
-        }
 
-        //****************************************************************************************************
-        // 定义公用显示数据方法：
-        private void showData()
-        {
-            // 查询记录集：
-            DataTable dt = new ModPart().setWhere("id > 0").getSelect();
-
-            // 如果获取的数据集为空，则将修改按钮设为 禁用。
-            if (dt == null) {
-                btnUpdate.Enabled = false;
-            } else {
-                btnUpdate.Enabled = true;
-
-                // 获得数据格
-                int intIndex = 0;
-                if (grd.Rows.Count > 0) {
-                    intIndex = grd.CurrentRow.Index;
-                }
-
+<<<<<<< HEAD
                 grd.AutoGenerateColumns = false;
                 grd.DataSource = dt;
                 grd.Rows[intIndex].Cells[1].Selected = true;
@@ -67,6 +54,8 @@ namespace App.Dictionary {
         {
             showData();
 >>>>>>> pr/5
+=======
+>>>>>>> parent of 19c8a7b... changes
         }
         //************************************************************
         //数据调用

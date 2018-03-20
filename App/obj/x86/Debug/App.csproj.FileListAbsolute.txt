@@ -591,6 +591,7 @@ E:\a.爱眼医院\HisForm\App\obj\x86\Debug\App.csproj.CopyComplete
 E:\a.爱眼医院\HisForm\App\obj\x86\Debug\App.exe
 E:\a.爱眼医院\HisForm\App\obj\x86\Debug\App.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.exe.config
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.exe
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.pdb
@@ -936,3 +937,5 @@ G:\HisForm\App\obj\x86\Debug\Fakes\cs\b\CSkin.dll
 G:\HisForm\App\obj\x86\Debug\Fakes\cs\b\Microsoft.QualityTools.Testing.Fakes.dll
 G:\HisForm\App\obj\x86\Debug\Fakes\cs\b\Newtonsoft.Json.dll
 >>>>>>> pr/5
+=======
+>>>>>>> parent of 19c8a7b... changes

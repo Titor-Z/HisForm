@@ -713,6 +713,7 @@
     <Compile Include="Model\ModJobType.cs" />
     <Compile Include="Model\ModCard.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Model\ModPart.cs" />
 =======
     <Compile Include="Model\ModMedicareType.cs" />
@@ -720,6 +721,8 @@
     <Compile Include="Model\ModPart.cs" />
     <Compile Include="Model\ModPayType.cs" />
 >>>>>>> pr/5
+=======
+>>>>>>> parent of 19c8a7b... changes
     <Compile Include="Model\ModRegisterType.cs" />
     <Compile Include="Model\ModRelation.cs" />
     <Compile Include="Model\ModReserver.cs" />
