@@ -3,7 +3,8 @@
 namespace App.Model {
 	class ModDrugStore : DbHelper {
 		public ModDrugStore() {
-			this.strTable = "drug_store";
+			this.strTable = "drugStore";
+            this.strWhere = "(ispass = 1)";
 		}
 	}
 }

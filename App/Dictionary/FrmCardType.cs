@@ -43,7 +43,7 @@ namespace App.Dictionary {
 		//****************************************************************************************************
 		//添加
 		private void btnInsert_Click(object sender, EventArgs e) {
-			FrmCardTypeEdit frm = new FrmCardTypeEdit(0);
+			FrmCardTypeEdit frm = new FrmCardTypeEdit();
 			if (frm.ShowDialog() == DialogResult.OK) {
 				showData();
 			}

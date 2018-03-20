@@ -35,11 +35,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSick));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
             this.skinButton1 = new CCWin.SkinControl.SkinButton();
@@ -48,6 +43,12 @@
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinPanel1.SuspendLayout();
             this.skinToolStrip1.SuspendLayout();
@@ -55,6 +56,8 @@
             // 
             // grd
             // 
+            this.grd.AllowUserToAddRows = false;
+            this.grd.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -71,6 +74,7 @@
             this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -92,6 +96,7 @@
             this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
             this.grd.Location = new System.Drawing.Point(4, 116);
             this.grd.Name = "grd";
+            this.grd.ReadOnly = true;
             this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -100,37 +105,12 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grd.RowTemplate.Height = 23;
+            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd.Size = new System.Drawing.Size(792, 480);
             this.grd.TabIndex = 8;
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "主码";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "病种编码";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "病种名称";
-            this.Column3.Name = "Column3";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "拼音";
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "是否可用";
-            this.Column4.Name = "Column4";
             // 
             // skinPanel1
             // 
@@ -302,6 +282,50 @@
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "SICKMAINCODE";
+            this.Column1.HeaderText = "主码";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "SICKCODE";
+            this.Column2.HeaderText = "病种编码";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 120;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "SICKNAME";
+            this.Column3.HeaderText = "病种名称";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "SICKSPELL";
+            this.Column5.HeaderText = "拼音";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "ISPASS";
+            this.Column4.HeaderText = "是否可用";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
             // FrmSick
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -336,6 +360,7 @@
         private System.Windows.Forms.ToolStripButton btnUpdate;
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripButton btnClose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

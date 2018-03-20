@@ -102,7 +102,7 @@
             this.skinGroupBox1.TitleBorderColor = System.Drawing.Color.Red;
             this.skinGroupBox1.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox1.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinGroupBox1.Enter += new System.EventHandler(this.skinGroupBox1_Enter);
+            
             // 
             // label10
             // 
@@ -393,7 +393,6 @@
             this.label13.Size = new System.Drawing.Size(68, 17);
             this.label13.TabIndex = 2;
             this.label13.Text = "发票分类：";
-            this.label13.Click += new System.EventHandler(this.label6_Click);
             // 
             // label11
             // 
@@ -405,7 +404,6 @@
             this.label11.Size = new System.Drawing.Size(68, 17);
             this.label11.TabIndex = 2;
             this.label11.Text = "财务分类：";
-            this.label11.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 
@@ -417,7 +415,6 @@
             this.label8.Size = new System.Drawing.Size(68, 17);
             this.label8.TabIndex = 2;
             this.label8.Text = "收费科目：";
-            this.label8.Click += new System.EventHandler(this.label6_Click);
             // 
             // label6
             // 
@@ -429,7 +426,6 @@
             this.label6.Size = new System.Drawing.Size(44, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "单位：";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txtCureName
             // 

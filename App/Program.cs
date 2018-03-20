@@ -1,5 +1,5 @@
 ﻿using App.Dictionary;
-using App.Guidance;
+using MySql.Data.MySqlClient;
 using System;
 using System.Data.OleDb;
 using System.Data.OracleClient;
@@ -9,10 +9,10 @@ using System.Xml;
 
 namespace App {
 	static class Program {
-		public static OleDbConnection oleConn = new OleDbConnection();
+		public static OleDbConnection oleDbConnection = new OleDbConnection();
 		public static SqlConnection mssqlConn = new SqlConnection();
 		public static OracleConnection oracleConn = new OracleConnection();
-		//public static MysqlConnector mysqlconn = new MysqlConnector();
+		public static MySqlConnection mySqlConn = new MySqlConnection();
 
 		public static string strAppName;
 		public static string strDbType, strDbHost, strDbProt, strDbPath, strDbName, strDbUsername, strDbPassword, strDbPrefix;
@@ -27,7 +27,6 @@ namespace App {
 		public static string strRealname = "";
 
 		public static XmlDocument xmlApp = new XmlDocument();
-
 		//****************************************************************************************************
 		/// <summary>
 		/// 应用程序的主入口点。
@@ -39,7 +38,7 @@ namespace App {
 
 			strAppName = xmlApp.SelectSingleNode("/config/system/appName").InnerText;
 
-			strDbType = xmlApp.SelectSingleNode("/config/database/dbType").InnerText;
+			strDbType = xmlApp.SelectSingleNode("/config/database/dbType").InnerText.ToLower();
 			strDbHost = xmlApp.SelectSingleNode("/config/database/dbHost").InnerText;
 			strDbProt = xmlApp.SelectSingleNode("/config/database/dbProt").InnerText;
 			strDbPath = xmlApp.SelectSingleNode("/config/database/dbPath").InnerText;
@@ -51,8 +50,12 @@ namespace App {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
+            //Application.Run(new FrmAntibiosisLevel());
+            //Application.Run(new FrmAssayTemplate());
+            //Application.Run(new FrmCity());
+            Application.Run(new FrmDrug());
 			//Application.Run(new App.FrmLogin());
-			Application.Run(new App.FrmMain());
+			///Application.Run(new App.FrmMain());
 
 			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
 
@@ -63,8 +66,8 @@ namespace App {
 
 			//Application.Run(new FrmPassword());
 
-			//Application.Run(new FrmHospital());
-			//Application.Run(new FrmHospitalEdit(0));
+			//Application.Run(new FrmWorkerType());
+			//Application.Run(new FrmHospitalEdit(3));
 
 			//Application.Run(new FrmDepartment());
 			//Application.Run(new FrmDepartmentEdit(20));

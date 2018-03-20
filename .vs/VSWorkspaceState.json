@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
-    "",
+<<<<<<< HEAD
     "\\App"
   ],
-  "SelectedNode": "\\App\\App.csproj",
+=======
+    "",
+    "\\App",
+    "\\App\\Dictionary"
+  ],
+  "SelectedNode": "\\App\\Dictionary\\FrmFactory.cs",
+>>>>>>> pr/1
   "PreviewInSolutionExplorer": false
 }
