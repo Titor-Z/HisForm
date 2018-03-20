@@ -51,8 +51,9 @@ namespace App {
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 
-			//Application.Run(new App.FrmLogin());
-			Application.Run(new App.FrmMain());
+            //Application.Run(new App.FrmLogin());
+            //Application.Run(new App.FrmMain());
+            Application.Run(new FrmPart());
 
 			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
 

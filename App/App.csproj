@@ -665,6 +665,7 @@
     <Compile Include="Model\ModEntity.cs" />
     <Compile Include="Model\ModJobType.cs" />
     <Compile Include="Model\ModCard.cs" />
+    <Compile Include="Model\ModPart.cs" />
     <Compile Include="Model\ModRegisterType.cs" />
     <Compile Include="Model\ModRelation.cs" />
     <Compile Include="Model\ModReserver.cs" />

@@ -73,6 +73,11 @@ namespace App.Dictionary {
 		private void dgrd_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e) {
 			ParseGrid.showPass(grd, e);
 		}
-		//****************************************************************************************************
-	}
+
+        private void grd_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        //****************************************************************************************************
+    }
 }

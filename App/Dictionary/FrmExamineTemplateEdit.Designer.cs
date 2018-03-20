@@ -35,7 +35,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
+            this.cmbFactoryId = new CCWin.SkinControl.SkinComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,7 +60,7 @@
             this.skinGroupBox1.Controls.Add(this.label10);
             this.skinGroupBox1.Controls.Add(this.label8);
             this.skinGroupBox1.Controls.Add(this.label7);
-            this.skinGroupBox1.Controls.Add(this.skinComboBox1);
+            this.skinGroupBox1.Controls.Add(this.cmbFactoryId);
             this.skinGroupBox1.Controls.Add(this.label6);
             this.skinGroupBox1.Controls.Add(this.label5);
             this.skinGroupBox1.Controls.Add(this.label2);
@@ -174,22 +174,22 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "*";
             // 
-            // skinComboBox1
+            // cmbFactoryId
             // 
-            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.skinComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.skinComboBox1.FormattingEnabled = true;
-            this.skinComboBox1.Location = new System.Drawing.Point(124, 174);
-            this.skinComboBox1.Name = "skinComboBox1";
-            this.skinComboBox1.Size = new System.Drawing.Size(184, 22);
-            this.skinComboBox1.TabIndex = 3;
-            this.skinComboBox1.WaterText = "请选择生产厂商";
+            this.cmbFactoryId.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbFactoryId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFactoryId.FormattingEnabled = true;
+            this.cmbFactoryId.Location = new System.Drawing.Point(124, 174);
+            this.cmbFactoryId.Name = "cmbFactoryId";
+            this.cmbFactoryId.Size = new System.Drawing.Size(184, 22);
+            this.cmbFactoryId.TabIndex = 3;
+            this.cmbFactoryId.WaterText = "请选择生产厂商";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label6.ForeColor = System.Drawing.Color.Blue;
             this.label6.Location = new System.Drawing.Point(58, 177);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 17);
@@ -459,7 +459,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private CCWin.SkinControl.SkinComboBox skinComboBox1;
+        private CCWin.SkinControl.SkinComboBox cmbFactoryId;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
