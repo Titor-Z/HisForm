@@ -224,6 +224,18 @@
     <Compile Include="Dictionary\FrmDoctorLevelEdit.Designer.cs">
       <DependentUpon>FrmDoctorLevelEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dictionary\FrmDrug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrug.Designer.cs">
+      <DependentUpon>FrmDrug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrugEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmDrugEdit.Designer.cs">
+      <DependentUpon>FrmDrugEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dictionary\FrmDrugHouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +355,18 @@
     </Compile>
     <Compile Include="Dictionary\FrmInvoiceTypeEdit.Designer.cs">
       <DependentUpon>FrmInvoiceTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\FrmMedicareType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmMedicareType.Designer.cs">
+      <DependentUpon>FrmMedicareType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dictionary\FrmMedicareTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary\FrmMedicareTypeEdit.Designer.cs">
+      <DependentUpon>FrmMedicareTypeEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Dictionary\FrmPack.cs">
       <SubType>Form</SubType>
@@ -662,17 +686,49 @@
     <Compile Include="Guidance\FrmCardEdit.Designer.cs">
       <DependentUpon>FrmCardEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ModAntibiosisLevel.cs" />
+    <Compile Include="Model\ModAssayTemplate.cs" />
     <Compile Include="Model\ModCardType.cs" />
     <Compile Include="Model\ModCertificateType.cs" />
+    <Compile Include="Model\ModChargeType.cs" />
     <Compile Include="Model\ModCity.cs" />
+    <Compile Include="Model\ModConformation.cs" />
+    <Compile Include="Model\ModCure.cs" />
+    <Compile Include="Model\ModCureTemplate.cs" />
+    <Compile Include="Model\ModDevice.cs" />
+    <Compile Include="Model\ModDoctorLevel.cs" />
+    <Compile Include="Model\ModDrug.cs" />
+    <Compile Include="Model\ModDrugHouse.cs" />
     <Compile Include="Model\ModDrugStore.cs" />
+    <Compile Include="Model\ModDrugType.cs" />
     <Compile Include="Model\ModEntity.cs" />
+    <Compile Include="Model\ModExaminePack.cs" />
+    <Compile Include="Model\ModExaminePrice.cs" />
+    <Compile Include="Model\ModExamineTemplate.cs" />
+    <Compile Include="Model\ModFactory.cs" />
+    <Compile Include="Model\ModFinance.cs" />
+    <Compile Include="Model\ModFinanceType.cs" />
+    <Compile Include="Model\ModFixed.cs" />
+    <Compile Include="Model\ModInvoiceType.cs" />
     <Compile Include="Model\ModJobType.cs" />
     <Compile Include="Model\ModCard.cs" />
+<<<<<<< HEAD
     <Compile Include="Model\ModPart.cs" />
+=======
+    <Compile Include="Model\ModMedicareType.cs" />
+    <Compile Include="Model\ModPack.cs" />
+    <Compile Include="Model\ModPart.cs" />
+    <Compile Include="Model\ModPayType.cs" />
+>>>>>>> pr/5
     <Compile Include="Model\ModRegisterType.cs" />
     <Compile Include="Model\ModRelation.cs" />
     <Compile Include="Model\ModReserver.cs" />
+    <Compile Include="Model\ModSample.cs" />
+    <Compile Include="Model\ModSick.cs" />
+    <Compile Include="Model\ModSupplier.cs" />
+    <Compile Include="Model\ModToxic.cs" />
+    <Compile Include="Model\ModUnit.cs" />
+    <Compile Include="Model\ModUsage.cs" />
     <Compile Include="Model\ModUserLevel.cs" />
     <Compile Include="Model\ModUserSource.cs" />
     <Compile Include="Model\ModUserType.cs" />
@@ -996,6 +1052,12 @@
     <EmbeddedResource Include="Dictionary\FrmDoctorLevelEdit.resx">
       <DependentUpon>FrmDoctorLevelEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmDrug.resx">
+      <DependentUpon>FrmDrug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmDrugEdit.resx">
+      <DependentUpon>FrmDrugEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmDrugHouse.resx">
       <DependentUpon>FrmDrugHouse.cs</DependentUpon>
     </EmbeddedResource>
@@ -1025,6 +1087,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmExaminePriceEdit.resx">
       <DependentUpon>FrmExaminePriceEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmExamineTemplate.resx">
       <DependentUpon>FrmExamineTemplate.cs</DependentUpon>
@@ -1055,6 +1118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmInvoiceTypeEdit.resx">
       <DependentUpon>FrmInvoiceTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmMedicareType.resx">
+      <DependentUpon>FrmMedicareType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary\FrmMedicareTypeEdit.resx">
+      <DependentUpon>FrmMedicareTypeEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary\FrmPack.resx">
       <DependentUpon>FrmPack.cs</DependentUpon>
@@ -1345,6 +1414,9 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <Fakes Include="Fakes\CSkin.fakes" />
+    <None Include="FakesAssemblies\CSkin.16.1.14.2.Fakes.fakesconfig" />
+    <None Include="FakesAssemblies\Newtonsoft.Json.1.1.1.0.Fakes.fakesconfig" />
+    <None Include="FakesAssemblies\Newtonsoft.Json.1.1.1.0.Fakes.messages" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1371,6 +1443,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FakesAssemblies\CSkin.16.1.14.2.Fakes.dll" />
+    <Content Include="FakesAssemblies\CSkin.16.1.14.2.Fakes.xml" />
+    <Content Include="FakesAssemblies\Newtonsoft.Json.1.1.1.0.Fakes.dll" />
+    <Content Include="FakesAssemblies\Newtonsoft.Json.1.1.1.0.Fakes.xml" />
     <None Include="Resources\close.png" />
     <None Include="images\login.jpg" />
     <Content Include="logo.ico" />

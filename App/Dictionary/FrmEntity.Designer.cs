@@ -29,14 +29,23 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEntity));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
+<<<<<<< HEAD
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+>>>>>>> pr/5
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
             this.btnInsert = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
+<<<<<<< HEAD
+=======
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> pr/5
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinToolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +106,7 @@
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+<<<<<<< HEAD
             this.grd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_CellContentClick);
             this.grd.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgrd_CellFormatting);
             // 
@@ -125,6 +135,10 @@
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column5.Width = 200;
             // 
+=======
+            this.grd.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgrd_CellFormatting);
+            // 
+>>>>>>> pr/5
             // skinToolStrip1
             // 
             this.skinToolStrip1.Arrow = System.Drawing.Color.Black;
@@ -223,6 +237,34 @@
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+<<<<<<< HEAD
+=======
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "isPass";
+            this.Column4.HeaderText = "状态";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "TXTENTITYNAME";
+            this.Column5.HeaderText = "病种";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column5.Width = 200;
+            // 
+>>>>>>> pr/5
             // FrmEntity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -258,8 +300,8 @@
 		private System.Windows.Forms.ToolStripButton btnUpdate;
 		private System.Windows.Forms.ToolStripButton btnRefresh;
 		private System.Windows.Forms.ToolStripButton btnClose;
-		private System.Windows.Forms.DataGridViewTextBoxColumn id;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-	}
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+    }
 }

@@ -35,6 +35,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExaminePrice));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
+            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
+            this.btnInsert = new System.Windows.Forms.ToolStripButton();
+            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
+            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.btnClose = new System.Windows.Forms.ToolStripButton();
+            this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
+            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,14 +57,6 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
-            this.btnInsert = new System.Windows.Forms.ToolStripButton();
-            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
-            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.btnClose = new System.Windows.Forms.ToolStripButton();
-            this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
-            this.skinButton1 = new CCWin.SkinControl.SkinButton();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinToolStrip1.SuspendLayout();
             this.skinPanel1.SuspendLayout();
@@ -63,6 +64,8 @@
             // 
             // grd
             // 
+            this.grd.AllowUserToAddRows = false;
+            this.grd.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -79,6 +82,7 @@
             this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
             this.Column1,
             this.Column3,
             this.Column2,
@@ -108,6 +112,7 @@
             this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
             this.grd.Location = new System.Drawing.Point(4, 116);
             this.grd.Name = "grd";
+            this.grd.ReadOnly = true;
             this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -116,77 +121,12 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.grd.RowTemplate.Height = 23;
+            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grd.Size = new System.Drawing.Size(1192, 780);
             this.grd.TabIndex = 3;
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "名称";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "拼音";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "部位";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 120;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "医价编码";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "单位";
-            this.Column6.Name = "Column6";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "收费分类";
-            this.Column4.Name = "Column4";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "规格";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "缴费处";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "发票分类";
-            this.Column9.Name = "Column9";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "执行科室";
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "价格";
-            this.Column11.Name = "Column11";
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "成本";
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "是否启用";
-            this.Column13.Name = "Column13";
             // 
             // skinToolStrip1
             // 
@@ -359,6 +299,104 @@
             this.skinButton1.UseVisualStyleBackColor = false;
             this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TXTEXAMINENAME";
+            this.Column1.HeaderText = "名称";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TXTSPELL";
+            this.Column3.HeaderText = "拼音";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "CMBPARTYID";
+            this.Column2.HeaderText = "部位";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 120;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "CCBMEDICINECODE";
+            this.Column5.HeaderText = "医价编码";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "CMBUNITID";
+            this.Column6.HeaderText = "单位";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "CMBFINANCETYPEID";
+            this.Column4.HeaderText = "收费分类";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "TXTSPACE";
+            this.Column7.HeaderText = "规格";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "缴费处";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "CMBINVOICETYPEID";
+            this.Column9.HeaderText = "发票分类";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "CHKDEPARTMENTIDS";
+            this.Column10.HeaderText = "执行科室";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "TXTPRICE";
+            this.Column11.HeaderText = "价格";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "TXTCOST";
+            this.Column12.HeaderText = "成本";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "ISPASS";
+            this.Column13.HeaderText = "是否启用";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
             // FrmExaminePrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -393,6 +431,7 @@
         private CCWin.SkinControl.SkinPanel skinPanel1;
         private CCWin.SkinControl.SkinTextBox skinTextBox1;
         private CCWin.SkinControl.SkinButton skinButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

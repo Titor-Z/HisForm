@@ -32,20 +32,30 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPart));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
+=======
+>>>>>>> pr/5
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
             this.btnInsert = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
+<<<<<<< HEAD
+=======
+            this.grd = new CCWin.SkinControl.SkinDataGridView();
+>>>>>>> pr/5
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
+<<<<<<< HEAD
             this.skinToolStrip1.SuspendLayout();
+=======
+>>>>>>> pr/5
             this.SuspendLayout();
             // 
             // grd
@@ -200,9 +210,74 @@
             this.btnClose.Text = "关闭(&C)";
             this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+<<<<<<< HEAD
             // 
             // id
             // 
+=======
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // grd
+            // 
+            this.grd.AllowUserToAddRows = false;
+            this.grd.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.grd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.grd.ColumnFont = null;
+            this.grd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.grd.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grd.DefaultCellStyle = dataGridViewCellStyle3;
+            this.grd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grd.EnableHeadersVisualStyles = false;
+            this.grd.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grd.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grd.Location = new System.Drawing.Point(4, 68);
+            this.grd.Name = "grd";
+            this.grd.ReadOnly = true;
+            this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.grd.RowTemplate.Height = 23;
+            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grd.Size = new System.Drawing.Size(671, 387);
+            this.grd.TabIndex = 5;
+            this.grd.TitleBack = null;
+            this.grd.TitleBackColorBegin = System.Drawing.Color.White;
+            this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+>>>>>>> pr/5
             this.id.HeaderText = "id";
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -214,7 +289,10 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "编号";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn1.Visible = false;
+=======
+>>>>>>> pr/5
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -225,14 +303,22 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Spell";
+=======
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "spell";
+>>>>>>> pr/5
             this.dataGridViewTextBoxColumn3.HeaderText = "拼音";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn4.DataPropertyName = "isPass";
+=======
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ispass";
+>>>>>>> pr/5
             this.dataGridViewTextBoxColumn4.HeaderText = "是否可用";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
@@ -252,6 +338,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             this.skinToolStrip1.ResumeLayout(false);
             this.skinToolStrip1.PerformLayout();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
+>>>>>>> pr/5
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,6 +355,10 @@
         private System.Windows.Forms.ToolStripButton btnUpdate;
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripButton btnClose;
+<<<<<<< HEAD
+=======
+        private CCWin.SkinControl.SkinDataGridView grd;
+>>>>>>> pr/5
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

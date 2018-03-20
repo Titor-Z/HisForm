@@ -35,7 +35,7 @@
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.txtChargeType = new CCWin.SkinControl.SkinTextBox();
+            this.txtChargeTypeName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtChargeTypeCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.txtChargeType);
+            this.skinGroupBox1.Controls.Add(this.txtChargeTypeName);
             this.skinGroupBox1.Controls.Add(this.label3);
             this.skinGroupBox1.Controls.Add(this.txtChargeTypeCode);
             this.skinGroupBox1.Controls.Add(this.label1);
@@ -142,48 +142,48 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtChargeType
+            // txtChargeTypeName
             // 
-            this.txtChargeType.BackColor = System.Drawing.Color.Transparent;
-            this.txtChargeType.DownBack = null;
-            this.txtChargeType.Icon = null;
-            this.txtChargeType.IconIsButton = false;
-            this.txtChargeType.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.txtChargeType.IsPasswordChat = '\0';
-            this.txtChargeType.IsSystemPasswordChar = false;
-            this.txtChargeType.Lines = new string[0];
-            this.txtChargeType.Location = new System.Drawing.Point(125, 112);
-            this.txtChargeType.Margin = new System.Windows.Forms.Padding(0);
-            this.txtChargeType.MaxLength = 32767;
-            this.txtChargeType.MinimumSize = new System.Drawing.Size(28, 28);
-            this.txtChargeType.MouseBack = null;
-            this.txtChargeType.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.txtChargeType.Multiline = true;
-            this.txtChargeType.Name = "txtChargeType";
-            this.txtChargeType.NormlBack = null;
-            this.txtChargeType.Padding = new System.Windows.Forms.Padding(5);
-            this.txtChargeType.ReadOnly = false;
-            this.txtChargeType.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtChargeType.Size = new System.Drawing.Size(184, 29);
+            this.txtChargeTypeName.BackColor = System.Drawing.Color.Transparent;
+            this.txtChargeTypeName.DownBack = null;
+            this.txtChargeTypeName.Icon = null;
+            this.txtChargeTypeName.IconIsButton = false;
+            this.txtChargeTypeName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtChargeTypeName.IsPasswordChat = '\0';
+            this.txtChargeTypeName.IsSystemPasswordChar = false;
+            this.txtChargeTypeName.Lines = new string[0];
+            this.txtChargeTypeName.Location = new System.Drawing.Point(125, 112);
+            this.txtChargeTypeName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtChargeTypeName.MaxLength = 32767;
+            this.txtChargeTypeName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtChargeTypeName.MouseBack = null;
+            this.txtChargeTypeName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtChargeTypeName.Multiline = true;
+            this.txtChargeTypeName.Name = "txtChargeTypeName";
+            this.txtChargeTypeName.NormlBack = null;
+            this.txtChargeTypeName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtChargeTypeName.ReadOnly = false;
+            this.txtChargeTypeName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtChargeTypeName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.txtChargeType.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtChargeType.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtChargeType.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.txtChargeType.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.txtChargeType.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.txtChargeType.SkinTxt.Multiline = true;
-            this.txtChargeType.SkinTxt.Name = "BaseText";
-            this.txtChargeType.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.txtChargeType.SkinTxt.TabIndex = 0;
-            this.txtChargeType.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.txtChargeType.SkinTxt.WaterText = "请输入名称";
-            this.txtChargeType.TabIndex = 1;
-            this.txtChargeType.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtChargeType.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.txtChargeType.WaterText = "请输入名称";
-            this.txtChargeType.WordWrap = true;
+            this.txtChargeTypeName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtChargeTypeName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtChargeTypeName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtChargeTypeName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtChargeTypeName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtChargeTypeName.SkinTxt.Multiline = true;
+            this.txtChargeTypeName.SkinTxt.Name = "BaseText";
+            this.txtChargeTypeName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtChargeTypeName.SkinTxt.TabIndex = 0;
+            this.txtChargeTypeName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtChargeTypeName.SkinTxt.WaterText = "请输入名称";
+            this.txtChargeTypeName.TabIndex = 1;
+            this.txtChargeTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtChargeTypeName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtChargeTypeName.WaterText = "请输入名称";
+            this.txtChargeTypeName.WordWrap = true;
             // 
             // label3
             // 
@@ -277,7 +277,7 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox txtChargeType;
+        private CCWin.SkinControl.SkinTextBox txtChargeTypeName;
         private System.Windows.Forms.Label label3;
         private CCWin.SkinControl.SkinTextBox txtChargeTypeCode;
         private System.Windows.Forms.Label label1;

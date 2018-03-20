@@ -1,4 +1,5 @@
-﻿using CCWin;
+﻿using App.Model;
+using CCWin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +13,45 @@ namespace App.Dictionary
 {
     public partial class FrmUnit : CCSkinMain
     {
+        //*****************************************************
+        //委托
+        public FrmMain tabfrom
+        {
+            get;set;
+        }
         public FrmUnit()
         {
             InitializeComponent();
         }
-
+        //*****************************************************
+        //加载
         private void FrmUnit_Load(object sender, EventArgs e)
         {
-
+            showData();
         }
+        //*****************************************************
+        //调取数据
+        public void showData()
+        {
+            DataTable db = new ModUnit().setWhere("id > 0", true).getSelect();
+            if(db == null)
+            {
+                btnUpdate.Enabled = false;
+            }
+            else
+            {
+                btnUpdate.Enabled = true;
 
+                int intIndex = 0;
+                if (grd.Rows.Count > 0)
+                {
+                    intIndex = grd.CurrentRow.Index;
+                }
+                grd.AutoGenerateColumns = false;
+                grd.DataSource = db;
+                grd.Rows[intIndex].Cells[1].Selected = true;
+            }
+        }
         private void btnInsert_Click(object sender, EventArgs e)
         {
             FrmUnitEdit frm = new FrmUnitEdit();
