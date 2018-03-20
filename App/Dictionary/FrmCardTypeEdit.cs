@@ -10,7 +10,7 @@ namespace App.Dictionary {
 	public partial class FrmCardTypeEdit : CCSkinMain {
 		private int intId;
 		//****************************************************************************************************
-		public FrmCardTypeEdit(int intId = 0) {
+		public FrmCardTypeEdit(int intId) {
 			InitializeComponent();
 
 			this.intId = intId;

@@ -28,68 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSample));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnInsert = new System.Windows.Forms.ToolStripButton();
-            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
-            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.btnClose = new System.Windows.Forms.ToolStripButton();
-            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSample));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.skinToolStrip1.SuspendLayout();
+            this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
+            this.btnInsert = new System.Windows.Forms.ToolStripButton();
+            this.btnUpdate = new System.Windows.Forms.ToolStripButton();
+            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.btnClose = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
+            this.skinToolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnInsert
+            // grd
             // 
-            this.btnInsert.Image = global::App.Properties.Resources.add;
-            this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(48, 37);
-            this.btnInsert.Text = "添加&(I)";
-            this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.grd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.grd.ColumnFont = null;
+            this.grd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.grd.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grd.DefaultCellStyle = dataGridViewCellStyle3;
+            this.grd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grd.EnableHeadersVisualStyles = false;
+            this.grd.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grd.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grd.Location = new System.Drawing.Point(4, 68);
+            this.grd.Name = "grd";
+            this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.grd.RowTemplate.Height = 23;
+            this.grd.Size = new System.Drawing.Size(632, 408);
+            this.grd.TabIndex = 1;
+            this.grd.TitleBack = null;
+            this.grd.TitleBackColorBegin = System.Drawing.Color.White;
+            this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
-            // btnUpdate
+            // Column1
             // 
-            this.btnUpdate.Image = global::App.Properties.Resources.edit;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(53, 37);
-            this.btnUpdate.Text = "修改&(U)";
-            this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Column1.HeaderText = "编号";
+            this.Column1.Name = "Column1";
             // 
-            // btnRefresh
+            // Column2
             // 
-            this.btnRefresh.Image = global::App.Properties.Resources.refresh;
-            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(52, 37);
-            this.btnRefresh.Text = "刷新&(R)";
-            this.btnRefresh.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Column2.HeaderText = "名称";
+            this.Column2.Name = "Column2";
             // 
-            // btnClose
+            // Column3
             // 
-            this.btnClose.Image = global::App.Properties.Resources.exit;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(52, 37);
-            this.btnClose.Text = "关闭&(C)";
-            this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Column3.HeaderText = "拼音";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "是否可用";
+            this.Column4.Name = "Column4";
             // 
             // skinToolStrip1
             // 
@@ -143,101 +171,49 @@
             this.skinToolStrip1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
             this.skinToolStrip1.TitleRadius = 4;
             this.skinToolStrip1.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinToolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.skinToolStrip1_ItemClicked);
             // 
-            // grd
+            // btnInsert
             // 
-            this.grd.AllowUserToAddRows = false;
-            this.grd.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.grd.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grd.ColumnFont = null;
-            this.grd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.grd.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grd.DefaultCellStyle = dataGridViewCellStyle3;
-            this.grd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grd.EnableHeadersVisualStyles = false;
-            this.grd.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grd.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.grd.Location = new System.Drawing.Point(4, 68);
-            this.grd.Name = "grd";
-            this.grd.ReadOnly = true;
-            this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.grd.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.grd.RowTemplate.Height = 23;
-            this.grd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grd.Size = new System.Drawing.Size(632, 408);
-            this.grd.TabIndex = 1;
-            this.grd.TitleBack = null;
-            this.grd.TitleBackColorBegin = System.Drawing.Color.White;
-            this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            this.grd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_CellContentClick);
+            this.btnInsert.Image = global::App.Properties.Resources.add;
+            this.btnInsert.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(48, 37);
+            this.btnInsert.Text = "添加&(I)";
+            this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // id
+            // btnUpdate
             // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
+            this.btnUpdate.Image = global::App.Properties.Resources.edit;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUpdate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(53, 37);
+            this.btnUpdate.Text = "修改&(U)";
+            this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // Column1
+            // btnRefresh
             // 
-            this.Column1.DataPropertyName = "SAMPLECODE";
-            this.Column1.HeaderText = "编号";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.btnRefresh.Image = global::App.Properties.Resources.refresh;
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(52, 37);
+            this.btnRefresh.Text = "刷新&(R)";
+            this.btnRefresh.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
-            // Column2
+            // btnClose
             // 
-            this.Column2.DataPropertyName = "SAMPLENAME";
-            this.Column2.HeaderText = "名称";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "SAMPLESPLLE";
-            this.Column3.HeaderText = "拼音";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "ispass";
-            this.Column4.HeaderText = "是否可用";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.btnClose.Image = global::App.Properties.Resources.exit;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnClose.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(52, 37);
+            this.btnClose.Text = "关闭&(C)";
+            this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // FrmSample
             // 
@@ -252,9 +228,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "标本定义";
             this.Load += new System.EventHandler(this.FrmSample_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             this.skinToolStrip1.ResumeLayout(false);
             this.skinToolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,13 +238,12 @@
 
         #endregion
 
+        private CCWin.SkinControl.SkinToolStrip skinToolStrip1;
         private System.Windows.Forms.ToolStripButton btnInsert;
+        private CCWin.SkinControl.SkinDataGridView grd;
         private System.Windows.Forms.ToolStripButton btnUpdate;
         private System.Windows.Forms.ToolStripButton btnRefresh;
         private System.Windows.Forms.ToolStripButton btnClose;
-        private CCWin.SkinControl.SkinToolStrip skinToolStrip1;
-        private CCWin.SkinControl.SkinDataGridView grd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

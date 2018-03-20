@@ -35,6 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPart));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
 =======
@@ -45,6 +46,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 >>>>>>> parent of 19c8a7b... changes
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPart));
+            this.grd = new CCWin.SkinControl.SkinDataGridView();
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
             this.btnInsert = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
@@ -52,9 +57,12 @@
             this.btnClose = new System.Windows.Forms.ToolStripButton();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             this.grd = new CCWin.SkinControl.SkinDataGridView();
 >>>>>>> pr/5
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
 =======
             this.grd = new CCWin.SkinControl.SkinDataGridView();
@@ -70,8 +78,8 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 <<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
-<<<<<<< HEAD
             this.skinToolStrip1.SuspendLayout();
+<<<<<<< HEAD
 =======
 >>>>>>> pr/5
 =======
@@ -79,6 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.SuspendLayout();
             // 
             // skinToolStrip1
@@ -179,6 +189,7 @@
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 
             // id
             // 
@@ -265,6 +276,8 @@
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             // 
             // Column1
             // 
@@ -277,11 +290,14 @@
             this.Column2.Name = "Column2";
 >>>>>>> parent of 19c8a7b... changes
             // 
+<<<<<<< HEAD
             // Column3
             // 
 <<<<<<< HEAD
             this.id.DataPropertyName = "id";
 >>>>>>> pr/5
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.id.HeaderText = "id";
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -354,12 +370,14 @@
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
 <<<<<<< HEAD
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-<<<<<<< HEAD
             this.dataGridViewTextBoxColumn1.Visible = false;
+<<<<<<< HEAD
 =======
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -370,17 +388,22 @@
             // 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Spell";
 =======
             this.dataGridViewTextBoxColumn3.DataPropertyName = "spell";
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Spell";
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.dataGridViewTextBoxColumn3.HeaderText = "拼音";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             this.dataGridViewTextBoxColumn4.DataPropertyName = "isPass";
@@ -389,6 +412,9 @@
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "isPass";
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.dataGridViewTextBoxColumn4.HeaderText = "是否可用";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
@@ -409,6 +435,7 @@
             this.skinToolStrip1.PerformLayout();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
 >>>>>>> pr/5
@@ -416,6 +443,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).EndInit();
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,9 +459,12 @@
         private System.Windows.Forms.ToolStripButton btnClose;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         private CCWin.SkinControl.SkinDataGridView grd;
 >>>>>>> pr/5
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
 =======
         private CCWin.SkinControl.SkinDataGridView grd;

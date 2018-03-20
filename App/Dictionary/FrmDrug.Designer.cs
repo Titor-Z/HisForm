@@ -40,11 +40,10 @@
 			this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
 			this.skinButton1 = new CCWin.SkinControl.SkinButton();
 			this.grd = new CCWin.SkinControl.SkinDataGridView();
-			this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.拼音 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -132,7 +131,6 @@
 			this.toolStripButton1.Text = "查看(&U)";
 			this.toolStripButton1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
 			this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
 			// 
 			// toolStripButton4
 			// 
@@ -285,7 +283,6 @@
 			// grd
 			// 
 			this.grd.AllowUserToAddRows = false;
-			this.grd.AllowUserToDeleteRows = false;
 			dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
 			this.grd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
 			this.grd.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -302,11 +299,10 @@
 			this.grd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.grd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
             this.Column12,
             this.Column1,
             this.Column3,
-            this.拼音,
+            this.Column11,
             this.Column4,
             this.Column5,
             this.Column6,
@@ -330,7 +326,6 @@
 			this.grd.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
 			this.grd.Location = new System.Drawing.Point(4, 116);
 			this.grd.Name = "grd";
-			this.grd.ReadOnly = true;
 			this.grd.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
 			this.grd.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
 			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -346,89 +341,60 @@
 			this.grd.TitleBackColorBegin = System.Drawing.Color.White;
 			this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
 			// 
-			// id
-			// 
-			this.id.DataPropertyName = "id";
-			this.id.HeaderText = "id";
-			this.id.Name = "id";
-			this.id.ReadOnly = true;
-			this.id.Visible = false;
-			// 
 			// Column12
 			// 
-			this.Column12.DataPropertyName = "ispass";
 			this.Column12.HeaderText = "是否可用";
 			this.Column12.Name = "Column12";
-			this.Column12.ReadOnly = true;
 			// 
 			// Column1
 			// 
-			this.Column1.DataPropertyName = "NUMBERCODE";
 			this.Column1.HeaderText = "数字编码";
 			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
 			// 
 			// Column3
 			// 
-			this.Column3.DataPropertyName = "DRUGNAME";
 			this.Column3.HeaderText = "药物名";
 			this.Column3.Name = "Column3";
-			this.Column3.ReadOnly = true;
 			// 
-			// 拼音
+			// Column11
 			// 
-			this.拼音.DataPropertyName = "SPELL";
-			this.拼音.HeaderText = "拼音";
-			this.拼音.Name = "拼音";
-			this.拼音.ReadOnly = true;
+			this.Column11.HeaderText = "库存";
+			this.Column11.Name = "Column11";
 			// 
 			// Column4
 			// 
-			this.Column4.DataPropertyName = "SPEC";
 			this.Column4.HeaderText = "规格";
 			this.Column4.Name = "Column4";
-			this.Column4.ReadOnly = true;
 			// 
 			// Column5
 			// 
-			this.Column5.DataPropertyName = "PACKID";
 			this.Column5.HeaderText = "单位";
 			this.Column5.Name = "Column5";
-			this.Column5.ReadOnly = true;
 			// 
 			// Column6
 			// 
-			this.Column6.DataPropertyName = "FACTORYID";
 			this.Column6.HeaderText = "生产厂家";
 			this.Column6.Name = "Column6";
-			this.Column6.ReadOnly = true;
 			// 
 			// Column7
 			// 
-			this.Column7.DataPropertyName = "DRUGTYPEID";
 			this.Column7.HeaderText = "药品类型";
 			this.Column7.Name = "Column7";
-			this.Column7.ReadOnly = true;
 			// 
 			// Column8
 			// 
 			this.Column8.HeaderText = "科目";
 			this.Column8.Name = "Column8";
-			this.Column8.ReadOnly = true;
 			// 
 			// Column9
 			// 
-			this.Column9.DataPropertyName = "CONFORMATIONID";
 			this.Column9.HeaderText = "剂型";
 			this.Column9.Name = "Column9";
-			this.Column9.ReadOnly = true;
 			// 
 			// Column10
 			// 
-			this.Column10.DataPropertyName = "INVOICETYPEID";
 			this.Column10.HeaderText = "发票大类";
 			this.Column10.Name = "Column10";
-			this.Column10.ReadOnly = true;
 			// 
 			// FrmDrug
 			// 
@@ -464,17 +430,16 @@
 		private CCWin.SkinControl.SkinButton skinButton1;
 		private CCWin.SkinControl.SkinTextBox skinTextBox2;
 		private CCWin.SkinControl.SkinDataGridView grd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 拼音;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-    }
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+	}
 }

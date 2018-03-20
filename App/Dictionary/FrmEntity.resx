@@ -155,11 +155,15 @@
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVDhP7ZNBagJREETrJFEEzQV0GbdudBZJdBE3XkUQ
         Fx5PUAIBEXKByWJGUKO+hl44w4c/MlsLivl0VRf87j8K4SI1ztI6k/6uUnqSttTaLseBeULjtcSZy3EQ
         MAoEjF2Og4BhOYDap8txYO4FAvouF4H4AscYEjiCg39pft9spLY0zT2J9cCWmPDPvfERHqW9WNUhJFYh
         vbkF5CGxCunN7Aq7kFiFXOHXhthiKF/wA77bkBjYomymtkIbuse8U9jxXRSB0C0HUHtzOQ7MtR9S7adc
         72fC3GQ7G76pkfM3oa8uP1GAdAMKnhYHpF//9wAAAABJRU5ErkJggg==
+<<<<<<< HEAD
 =======
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVDhP7ZPBasJQEEXvl7QiWH+gLuvWjcnCNl3Ujb8i
         iAs/r6AUCiL0B+LCBKxVz8AsTHjwItn2wiWPuXcuvJkXhXCWHk/SZyntL1L+K22o9VyOA/M7jZcaZy7H
@@ -174,6 +178,8 @@
         Q3oPFnAIiXVI796usA6JdcgVvmyICUOZwmc4siExsPeqmdonWuoe877Aru+iDIR+NYDao8txYG78kBo/
         5WY/E+Y225nz3Ro5LwntuXxHCdIfPiUWFg1GvK4AAAAASUVORK5CYII=
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
 </value>
   </data>
   <data name="btnUpdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -181,7 +187,6 @@
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
 <<<<<<< HEAD
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVDhP5ZM9LERBEMenopCQ0GgoKHREIr6TZ3ffXU6h
-<<<<<<< HEAD
         JBoNWiVRqWhIFKKiVFxc3O3uu8slSolCQ6FBJAoXkUgQEVEomDdvXG65d9H7JZvd2Zn/7Oy8ffALZdPg
         pd9AZG9wXaIh7C3Ozzifgyp0cGQVhMlj4CcoswbSdkPCjtCQuX4YMwOgstfg2TuO/oEyOhLjkME477pI
         O4dxe7QW+R6aifLJ3wn0PHtcJjN1kCo2ov+YY7ejO1eKo5FiiUuqWI99OHNiQaU/cLEKvp3C8mZjy0/u
@@ -189,6 +194,7 @@
         eyqIS5DUbdikFfS/sngd/EwTNnoDEocNHIXEJVD2CJR+xyTT2IMJ3lsAL/tC6zL0zoMhtiKE6cLgEzx1
         iXcilFnEp3zFFqMOnkDkOtmqjQhmsKp7thjPPuJpGczei49pkK7jmz5660IPkx3+TKGPPqc+ZSXjB6N0
         DWkeqB/Vxp9/5/8IwBdbjORKHV9TqQAAAABJRU5ErkJggg==
+<<<<<<< HEAD
 =======
         JBoNWiVRqWhIFKKiVMhd3O3uu8slSolCQ6FBJAoXkUgQEVEomDdvXG65d9H7JZvd2Zn/7Oy8ffALZffB
         S7+ByN7gukRD2Fucn3E+B1Xo4MgqCJPHwE9QZg2k7YaEHaEhc/0wZgZAZa/Bs3cc/QNldCTGIYNx3nWR
@@ -208,12 +214,13 @@
         iXdilF7Ep3zNFqMOn0H4nWzVRoQzWNUDW4xjnvA0D7P34mMapOu4uo/eugiGyY5+pshHnzM4YyXjhqN0
         DakfqR/Vxp9/5/8IwDd15+RQeLgwaQAAAABJRU5ErkJggg==
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
 </value>
   </data>
   <data name="btnRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-<<<<<<< HEAD
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGOSURBVDhP5VO9SgNBGByQRC93ZxN8A/8RLMTGwk6xUhGC
         lZ1aRCS5vQQEhfgIEsFC1E6wtVMLbfx9ATtFFERUsFf8md370Ojt5QUcGO52b2a+3W/3YDCLlKswlAmx
         44S4dEPcpxWe3SKuOT7IKCw2B2iNxBEyAUZ8hXYz8EJ0M6BA42YqxAOfnzHO4Y0FVlBB2lPImTmFeROg
@@ -223,6 +230,7 @@
         8zTHQxGPZ6YlD49Lr/L6vsdCNHUBhXW3hCL/xl4T4JfR5pQwZgYCznXQsCwndMtGP2m6BdxwvGv0FTSJ
 <<<<<<< HEAD
         /J8D+AJve8B3SUhs3AAAAABJRU5ErkJggg==
+<<<<<<< HEAD
 =======
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGMSURBVDhP5VO7SgNBFD0gRvdlE/wD3wgWYmNhp1ipCMHK
         Ti0CkuxsAoJC/ASJYCFqJ9jaqYU2Pn/AThEFERXsFR9nZi8a3dn8gAcOuzN7zrkzd2ZhMIdGT2HYjbDj
@@ -236,6 +244,8 @@
 =======
         /J8D+AKOU8CAMzk0qgAAAABJRU5ErkJggg==
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
 </value>
   </data>
   <data name="btnClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

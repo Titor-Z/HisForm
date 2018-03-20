@@ -592,6 +592,9 @@ E:\a.爱眼医院\HisForm\App\obj\x86\Debug\App.exe
 E:\a.爱眼医院\HisForm\App\obj\x86\Debug\App.pdb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.exe.config
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.exe
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\bin\x86\Debug\App.pdb
@@ -761,6 +764,7 @@ C:\Users\CONSOLE\Documents\GitHub\HisForm\App\obj\x86\Debug\App.csproj.GenerateR
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\obj\x86\Debug\App.csproj.CoreCompileInputs.cache
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\obj\x86\Debug\App.exe
 C:\Users\CONSOLE\Documents\GitHub\HisForm\App\obj\x86\Debug\App.pdb
+<<<<<<< HEAD
 =======
 G:\HisForm\App\bin\x86\Debug\App.exe.config
 G:\HisForm\App\bin\x86\Debug\App.exe
@@ -939,3 +943,5 @@ G:\HisForm\App\obj\x86\Debug\Fakes\cs\b\Newtonsoft.Json.dll
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase

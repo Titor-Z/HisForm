@@ -9,7 +9,7 @@ namespace App.Common {
 		//性别
 		public static void setSex(ComboBox cmb, Object value = null) {
 			DataTable dt = new DataTable();
-
+			
 			DataColumn dcText = new DataColumn("text");
 			DataColumn dcValue = new DataColumn("value");
 
@@ -153,15 +153,7 @@ namespace App.Common {
 		//院区
 		public static void setHospital(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModHospital().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("hospitalName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["hospitalName"] = "--请选择院区--";
@@ -177,15 +169,7 @@ namespace App.Common {
 		//科室类型
 		public static void setDepartmentType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModDepartmentType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("departmentType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["departmentType"] = "--请选择科室类型--";
@@ -205,15 +189,7 @@ namespace App.Common {
 		//科室
 		public static void setDepartment(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModDepartment().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("departmentName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["departmentName"] = "--请选择科室--";
@@ -233,15 +209,7 @@ namespace App.Common {
 		//员工类型
 		public static void setWorkerType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModWorkerType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("workerType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["workerType"] = "--请选择员工类型--";
@@ -261,15 +229,7 @@ namespace App.Common {
 		//员工
 		public static void setWorker(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModWorker().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("realname");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["realname"] = "--请选择员工--";
@@ -289,15 +249,7 @@ namespace App.Common {
 		//会员级别
 		public static void setUserLevel(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModUserLevel().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("userLevel");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["userLevel"] = "--请选择会员级别--";
@@ -317,15 +269,7 @@ namespace App.Common {
 		//患者来源
 		public static void setUserSource(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModUserSource().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("userSource");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["userSource"] = "--请选择患者来源--";
@@ -345,15 +289,7 @@ namespace App.Common {
 		//患者类型
 		public static void setUserType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModUserType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("userType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["userType"] = "--请选择患者类型--";
@@ -373,15 +309,7 @@ namespace App.Common {
 		//职业类型
 		public static void setJobType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModJobType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("jobType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["jobType"] = "--请选择职业类型--";
@@ -401,15 +329,7 @@ namespace App.Common {
 		//证件类型
 		public static void setCertificateType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModCertificateType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("certificateType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["certificateType"] = "--请选择证件类型--";
@@ -429,15 +349,7 @@ namespace App.Common {
 		//联系人关系
 		public static void setRelation(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModRelation().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("relationName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["relationName"] = "--请选择联系人关系--";
@@ -457,15 +369,7 @@ namespace App.Common {
 		//短信模板
 		public static void setSmsTemplate(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModSmsTemplate().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("templateName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["templateName"] = "--请选择短信模板--";
@@ -485,15 +389,7 @@ namespace App.Common {
 		//话术模板
 		public static void setSayTemplate(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModSayTemplate().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("templateName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["templateName"] = "--请选择话术模板--";
@@ -513,15 +409,7 @@ namespace App.Common {
 		//备注模板
 		public static void setRemarkTemplate(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModRemarkTemplate().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("templateName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["templateName"] = "--请选择备注模板--";
@@ -541,15 +429,7 @@ namespace App.Common {
 		//挂号类型
 		public static void setRegisterType(ComboBox cmb, Object value = null) {
 			DataTable dt = new ModRegisterType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
 
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("registerType");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
 			DataRow dr = dt.NewRow();
 			dr["id"] = 0;
 			dr["registerType"] = "--挂号类型--";
@@ -558,207 +438,6 @@ namespace App.Common {
 			cmb.DataSource = dt;
 			cmb.ValueMember = "id";
 			cmb.DisplayMember = "registerType";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//计量单位
-		public static void setUnit(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModUnit().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("unitName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["unitName"] = "--计量单位--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "unitName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//收费科目
-		public static void setChargeType(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModChargeType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("chargeTypeName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["chargeTypeName"] = "--收费类型--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "chargeTypeName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//财务分类
-		public static void setFinanceType(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModFinanceType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("financeTypeName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["financeTypeName"] = "--财务分类--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "financeTypeName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//发票分类
-		public static void setInvoiceType(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModInvoiceType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("invoiceTypeName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["invoiceTypeName"] = "--发票分类--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "invoiceTypeName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//生产厂商
-		public static void setFactory(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModFactory().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("factoryName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["factoryName"] = "--发票分类--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "factoryName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//抗菌药物级别 
-		public static void setAntibiosisLevel(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModAntibiosisLevel().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("antibiosisLevelName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["antibiosisLevelName"] = "--抗菌药物级别--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "antibiosisLevelName";
-
-			if (value == null) {
-				cmb.SelectedValue = 0;
-			} else {
-				cmb.SelectedValue = Convert.ToInt32(value);
-			}
-		}
-		//****************************************************************************************************
-		//药品类型  
-		public static void setDrugType(ComboBox cmb, Object value = null) {
-			DataTable dt = new ModDrugType().getSelect();
-			if (dt == null) {
-				dt = new DataTable();
-
-				DataColumn dcText = new DataColumn("id");
-				DataColumn dcValue = new DataColumn("drugTypeName");
-
-				dt.Columns.Add(dcText);
-				dt.Columns.Add(dcValue);
-			}
-
-			DataRow dr = dt.NewRow();
-			dr["id"] = 0;
-			dr["drugTypeName"] = "--药品类型--";
-			dt.Rows.InsertAt(dr, 0);
-
-			cmb.DataSource = dt;
-			cmb.ValueMember = "id";
-			cmb.DisplayMember = "drugTypeName";
 
 			if (value == null) {
 				cmb.SelectedValue = 0;

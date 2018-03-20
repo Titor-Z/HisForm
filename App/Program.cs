@@ -52,6 +52,7 @@ namespace App {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             //Application.Run(new App.FrmLogin());
             //Application.Run(new App.FrmMain());
             Application.Run(new FrmPart());
@@ -67,6 +68,11 @@ namespace App {
 			//Application.Run(new App.FrmLogin());
 			Application.Run(new App.FrmMain());
 >>>>>>> parent of 19c8a7b... changes
+=======
+            //Application.Run(new App.FrmLogin());
+            //Application.Run(new App.FrmMain());
+            Application.Run(new FrmPart());
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
 
 			//Application.Run(new App.DrugHouse.FrmDrugSellRefundSearch());
 
@@ -77,11 +83,7 @@ namespace App {
 
 			//Application.Run(new FrmPassword());
 
-<<<<<<< HEAD
 			//Application.Run(new FrmHospital());
-=======
-			//Application.Run(new FrmWorkerType());
->>>>>>> pr/5
 			//Application.Run(new FrmHospitalEdit(3));
 
 			//Application.Run(new FrmDepartment());

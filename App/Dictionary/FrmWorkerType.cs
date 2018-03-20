@@ -50,7 +50,7 @@ namespace App.Dictionary {
 		//修改
 		private void btnUpdate_Click(object sender, EventArgs e) {
 			FrmWorkerTypeEdit frm = new FrmWorkerTypeEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
-            if (frm.ShowDialog() == DialogResult.OK) {
+			if (frm.ShowDialog() == DialogResult.OK) {
 				showData();
 			}
 		}

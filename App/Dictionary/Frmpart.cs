@@ -14,6 +14,9 @@ namespace App.Dictionary
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
         //****************************************************************************************************
         //委托：
         public FrmMain tabForm
@@ -23,6 +26,7 @@ namespace App.Dictionary
 
         //****************************************************************************************************
         // 构造开始：
+<<<<<<< HEAD
 =======
         //***********************************************
         //委托
@@ -33,11 +37,12 @@ namespace App.Dictionary
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
         public FrmPart()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
         private void Frmpart_Load(object sender, EventArgs e)
         {
@@ -47,6 +52,7 @@ namespace App.Dictionary
                 grd.DataSource = dt;
                 grd.Rows[intIndex].Cells[1].Selected = true;
             }
+<<<<<<< HEAD
 =======
         //************************************************************
         //加载
@@ -56,31 +62,10 @@ namespace App.Dictionary
 >>>>>>> pr/5
 =======
 >>>>>>> parent of 19c8a7b... changes
+=======
+>>>>>>> parent of d4976f3... Merge branch 'pr/5' into BindToDatabase
         }
-        //************************************************************
-        //数据调用
-        public void showData()
-        {
-            DataTable db = new ModPart().setWhere("id > 0", true).getSelect();
-            if (db == null)
-            {
-                btnUpdate.Enabled = false;
-            }
-            else
-            {
-                btnUpdate.Enabled = true;
 
-                int intIndex = 0;
-                if (grd.Rows.Count > 0)
-                {
-                    intIndex = grd.CurrentRow.Index;
-                }
-
-                grd.AutoGenerateColumns = false;
-                grd.DataSource = db;
-                grd.Rows[intIndex].Cells[1].Selected = true;
-            }
-        }
         private void btnInsert_Click(object sender, EventArgs e)
         {
             FrmPart frm = new FrmPart();
