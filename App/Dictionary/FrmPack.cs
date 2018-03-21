@@ -19,16 +19,20 @@ namespace App.Dictionary
         {
             get; set;
         }
+
+        //************************************************************
         public FrmPack()
         {
             InitializeComponent();
         }
+
         //************************************************************
         //加载
         private void FrmPack_Load(object sender, EventArgs e)
         {
             showData();
         }
+
         //************************************************************
         //数据调用
         public void showData()
@@ -53,14 +57,28 @@ namespace App.Dictionary
                 grd.Rows[intIndex].Cells[1].Selected = true;
             }
         }
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
+
+        //************************************************************
+        // 添加：
+        private void btnInsert_Click(object sender, EventArgs e) {
             FrmPackEdit frm = new FrmPackEdit();
-            frm.ShowDialog();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
+        //************************************************************
+        // 修改：
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            FrmPackEdit frm = new FrmPackEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
+
+        //************************************************************
+        // 关闭当前窗体：
+        private void btnClose_Click(object sender, EventArgs e) {
             this.Close();
         }
     }

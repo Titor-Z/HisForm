@@ -35,9 +35,9 @@
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtMedicareTypeName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtMedicareTypeCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +51,9 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtMedicareTypeName);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtMedicareTypeCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
             this.skinGroupBox1.Location = new System.Drawing.Point(7, 31);
@@ -139,49 +139,50 @@
             this.btnClose.TabIndex = 12;
             this.btnClose.Text = "关闭&(C)";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // skinTextBox3
+            // txtMedicareTypeName
             // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(127, 86);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtMedicareTypeName.BackColor = System.Drawing.Color.Transparent;
+            this.txtMedicareTypeName.DownBack = null;
+            this.txtMedicareTypeName.Icon = null;
+            this.txtMedicareTypeName.IconIsButton = false;
+            this.txtMedicareTypeName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtMedicareTypeName.IsPasswordChat = '\0';
+            this.txtMedicareTypeName.IsSystemPasswordChar = false;
+            this.txtMedicareTypeName.Lines = new string[0];
+            this.txtMedicareTypeName.Location = new System.Drawing.Point(127, 86);
+            this.txtMedicareTypeName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtMedicareTypeName.MaxLength = 32767;
+            this.txtMedicareTypeName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtMedicareTypeName.MouseBack = null;
+            this.txtMedicareTypeName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtMedicareTypeName.Multiline = true;
+            this.txtMedicareTypeName.Name = "txtMedicareTypeName";
+            this.txtMedicareTypeName.NormlBack = null;
+            this.txtMedicareTypeName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtMedicareTypeName.ReadOnly = false;
+            this.txtMedicareTypeName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtMedicareTypeName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入名称";
-            this.skinTextBox3.TabIndex = 15;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入名称";
-            this.skinTextBox3.WordWrap = true;
+            this.txtMedicareTypeName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMedicareTypeName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMedicareTypeName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtMedicareTypeName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtMedicareTypeName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtMedicareTypeName.SkinTxt.Multiline = true;
+            this.txtMedicareTypeName.SkinTxt.Name = "BaseText";
+            this.txtMedicareTypeName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtMedicareTypeName.SkinTxt.TabIndex = 0;
+            this.txtMedicareTypeName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtMedicareTypeName.SkinTxt.WaterText = "请输入名称";
+            this.txtMedicareTypeName.TabIndex = 15;
+            this.txtMedicareTypeName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMedicareTypeName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtMedicareTypeName.WaterText = "请输入名称";
+            this.txtMedicareTypeName.WordWrap = true;
             // 
             // label3
             // 
@@ -194,47 +195,47 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "名称：";
             // 
-            // skinTextBox1
+            // txtMedicareTypeCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(127, 44);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtMedicareTypeCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtMedicareTypeCode.DownBack = null;
+            this.txtMedicareTypeCode.Icon = null;
+            this.txtMedicareTypeCode.IconIsButton = false;
+            this.txtMedicareTypeCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtMedicareTypeCode.IsPasswordChat = '\0';
+            this.txtMedicareTypeCode.IsSystemPasswordChar = false;
+            this.txtMedicareTypeCode.Lines = new string[0];
+            this.txtMedicareTypeCode.Location = new System.Drawing.Point(127, 44);
+            this.txtMedicareTypeCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtMedicareTypeCode.MaxLength = 32767;
+            this.txtMedicareTypeCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtMedicareTypeCode.MouseBack = null;
+            this.txtMedicareTypeCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtMedicareTypeCode.Multiline = false;
+            this.txtMedicareTypeCode.Name = "txtMedicareTypeCode";
+            this.txtMedicareTypeCode.NormlBack = null;
+            this.txtMedicareTypeCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtMedicareTypeCode.ReadOnly = false;
+            this.txtMedicareTypeCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtMedicareTypeCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入编号";
-            this.skinTextBox1.TabIndex = 11;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入编号";
-            this.skinTextBox1.WordWrap = true;
+            this.txtMedicareTypeCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMedicareTypeCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtMedicareTypeCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtMedicareTypeCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtMedicareTypeCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtMedicareTypeCode.SkinTxt.Name = "BaseText";
+            this.txtMedicareTypeCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtMedicareTypeCode.SkinTxt.TabIndex = 0;
+            this.txtMedicareTypeCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtMedicareTypeCode.SkinTxt.WaterText = "请输入编号";
+            this.txtMedicareTypeCode.TabIndex = 11;
+            this.txtMedicareTypeCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMedicareTypeCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtMedicareTypeCode.WaterText = "请输入编号";
+            this.txtMedicareTypeCode.WordWrap = true;
             // 
             // label1
             // 
@@ -257,7 +258,9 @@
             this.MinimizeBox = false;
             this.Name = "FrmMedicareTypeEdit";
             this.ShowDrawIcon = false;
-            this.Text = "FrmMedicareType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "医保类型";
+            this.Load += new System.EventHandler(this.FrmMedicareTypeEdit_Load);
             this.skinGroupBox1.ResumeLayout(false);
             this.skinGroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -272,9 +275,9 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtMedicareTypeName;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtMedicareTypeCode;
         private System.Windows.Forms.Label label1;
     }
 }

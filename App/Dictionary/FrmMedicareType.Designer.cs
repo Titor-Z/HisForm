@@ -108,6 +108,7 @@
             this.btnInsert.Size = new System.Drawing.Size(48, 37);
             this.btnInsert.Text = "添加&(I)";
             this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
@@ -119,6 +120,7 @@
             this.btnUpdate.Text = "修改&(U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -207,7 +209,7 @@
             // 
             // Column2
             // 
-            this.Column2.DataPropertyName = "MEDICARETYPE";
+            this.Column2.DataPropertyName = "MEDICARETYPENAME";
             this.Column2.HeaderText = "名称";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -228,7 +230,8 @@
             this.Controls.Add(this.skinToolStrip1);
             this.Name = "FrmMedicareType";
             this.ShowDrawIcon = false;
-            this.Text = "FrmMedicareType";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "医保类型";
             this.Load += new System.EventHandler(this.FrmMedicareType_Load);
             this.skinToolStrip1.ResumeLayout(false);
             this.skinToolStrip1.PerformLayout();

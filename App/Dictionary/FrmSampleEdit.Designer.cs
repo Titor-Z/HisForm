@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSave = new CCWin.SkinControl.SkinButton();
             this.chkIsPass = new CCWin.SkinControl.SkinCheckBox();
             this.btnClose = new CCWin.SkinControl.SkinButton();
-            this.skinTextBox4 = new CCWin.SkinControl.SkinTextBox();
+            this.txtSpell = new CCWin.SkinControl.SkinTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.skinTextBox3 = new CCWin.SkinControl.SkinTextBox();
+            this.txtSampleName = new CCWin.SkinControl.SkinTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.skinTextBox1 = new CCWin.SkinControl.SkinTextBox();
+            this.txtSampleCode = new CCWin.SkinControl.SkinTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.skinGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,11 +55,11 @@
             this.skinGroupBox1.Controls.Add(this.btnSave);
             this.skinGroupBox1.Controls.Add(this.chkIsPass);
             this.skinGroupBox1.Controls.Add(this.btnClose);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox4);
+            this.skinGroupBox1.Controls.Add(this.txtSpell);
             this.skinGroupBox1.Controls.Add(this.label4);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox3);
+            this.skinGroupBox1.Controls.Add(this.txtSampleName);
             this.skinGroupBox1.Controls.Add(this.label3);
-            this.skinGroupBox1.Controls.Add(this.skinTextBox1);
+            this.skinGroupBox1.Controls.Add(this.txtSampleCode);
             this.skinGroupBox1.Controls.Add(this.label1);
             this.skinGroupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.skinGroupBox1.ForeColor = System.Drawing.Color.Blue;
@@ -73,6 +73,17 @@
             this.skinGroupBox1.TitleBorderColor = System.Drawing.Color.Red;
             this.skinGroupBox1.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox1.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(72, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 17);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "*";
             // 
             // label5
             // 
@@ -147,48 +158,48 @@
             this.btnClose.Text = "关闭&(C)";
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // skinTextBox4
+            // txtSpell
             // 
-            this.skinTextBox4.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox4.DownBack = null;
-            this.skinTextBox4.Icon = null;
-            this.skinTextBox4.IconIsButton = false;
-            this.skinTextBox4.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox4.IsPasswordChat = '\0';
-            this.skinTextBox4.IsSystemPasswordChar = false;
-            this.skinTextBox4.Lines = new string[0];
-            this.skinTextBox4.Location = new System.Drawing.Point(125, 128);
-            this.skinTextBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox4.MaxLength = 32767;
-            this.skinTextBox4.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox4.MouseBack = null;
-            this.skinTextBox4.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox4.Multiline = true;
-            this.skinTextBox4.Name = "skinTextBox4";
-            this.skinTextBox4.NormlBack = null;
-            this.skinTextBox4.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox4.ReadOnly = false;
-            this.skinTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox4.Size = new System.Drawing.Size(184, 29);
+            this.txtSpell.BackColor = System.Drawing.Color.Transparent;
+            this.txtSpell.DownBack = null;
+            this.txtSpell.Icon = null;
+            this.txtSpell.IconIsButton = false;
+            this.txtSpell.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSpell.IsPasswordChat = '\0';
+            this.txtSpell.IsSystemPasswordChar = false;
+            this.txtSpell.Lines = new string[0];
+            this.txtSpell.Location = new System.Drawing.Point(125, 128);
+            this.txtSpell.Margin = new System.Windows.Forms.Padding(0);
+            this.txtSpell.MaxLength = 32767;
+            this.txtSpell.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtSpell.MouseBack = null;
+            this.txtSpell.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSpell.Multiline = true;
+            this.txtSpell.Name = "txtSpell";
+            this.txtSpell.NormlBack = null;
+            this.txtSpell.Padding = new System.Windows.Forms.Padding(5);
+            this.txtSpell.ReadOnly = false;
+            this.txtSpell.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSpell.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox4.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox4.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox4.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox4.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox4.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox4.SkinTxt.Multiline = true;
-            this.skinTextBox4.SkinTxt.Name = "BaseText";
-            this.skinTextBox4.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox4.SkinTxt.TabIndex = 0;
-            this.skinTextBox4.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox4.SkinTxt.WaterText = "请输入拼音";
-            this.skinTextBox4.TabIndex = 5;
-            this.skinTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox4.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox4.WaterText = "请输入拼音";
-            this.skinTextBox4.WordWrap = true;
+            this.txtSpell.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSpell.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSpell.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtSpell.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtSpell.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtSpell.SkinTxt.Multiline = true;
+            this.txtSpell.SkinTxt.Name = "BaseText";
+            this.txtSpell.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtSpell.SkinTxt.TabIndex = 0;
+            this.txtSpell.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSpell.SkinTxt.WaterText = "请输入拼音";
+            this.txtSpell.TabIndex = 5;
+            this.txtSpell.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSpell.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSpell.WaterText = "请输入拼音";
+            this.txtSpell.WordWrap = true;
             // 
             // label4
             // 
@@ -201,48 +212,48 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "拼音：";
             // 
-            // skinTextBox3
+            // txtSampleName
             // 
-            this.skinTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox3.DownBack = null;
-            this.skinTextBox3.Icon = null;
-            this.skinTextBox3.IconIsButton = false;
-            this.skinTextBox3.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.IsPasswordChat = '\0';
-            this.skinTextBox3.IsSystemPasswordChar = false;
-            this.skinTextBox3.Lines = new string[0];
-            this.skinTextBox3.Location = new System.Drawing.Point(125, 85);
-            this.skinTextBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox3.MaxLength = 32767;
-            this.skinTextBox3.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox3.MouseBack = null;
-            this.skinTextBox3.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox3.Multiline = true;
-            this.skinTextBox3.Name = "skinTextBox3";
-            this.skinTextBox3.NormlBack = null;
-            this.skinTextBox3.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox3.ReadOnly = false;
-            this.skinTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox3.Size = new System.Drawing.Size(184, 29);
+            this.txtSampleName.BackColor = System.Drawing.Color.Transparent;
+            this.txtSampleName.DownBack = null;
+            this.txtSampleName.Icon = null;
+            this.txtSampleName.IconIsButton = false;
+            this.txtSampleName.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSampleName.IsPasswordChat = '\0';
+            this.txtSampleName.IsSystemPasswordChar = false;
+            this.txtSampleName.Lines = new string[0];
+            this.txtSampleName.Location = new System.Drawing.Point(125, 85);
+            this.txtSampleName.Margin = new System.Windows.Forms.Padding(0);
+            this.txtSampleName.MaxLength = 32767;
+            this.txtSampleName.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtSampleName.MouseBack = null;
+            this.txtSampleName.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSampleName.Multiline = true;
+            this.txtSampleName.Name = "txtSampleName";
+            this.txtSampleName.NormlBack = null;
+            this.txtSampleName.Padding = new System.Windows.Forms.Padding(5);
+            this.txtSampleName.ReadOnly = false;
+            this.txtSampleName.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSampleName.Size = new System.Drawing.Size(184, 29);
             // 
             // 
             // 
-            this.skinTextBox3.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox3.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox3.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox3.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox3.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox3.SkinTxt.Multiline = true;
-            this.skinTextBox3.SkinTxt.Name = "BaseText";
-            this.skinTextBox3.SkinTxt.Size = new System.Drawing.Size(174, 19);
-            this.skinTextBox3.SkinTxt.TabIndex = 0;
-            this.skinTextBox3.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.SkinTxt.WaterText = "请输入名称";
-            this.skinTextBox3.TabIndex = 3;
-            this.skinTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox3.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox3.WaterText = "请输入名称";
-            this.skinTextBox3.WordWrap = true;
+            this.txtSampleName.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSampleName.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSampleName.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtSampleName.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtSampleName.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtSampleName.SkinTxt.Multiline = true;
+            this.txtSampleName.SkinTxt.Name = "BaseText";
+            this.txtSampleName.SkinTxt.Size = new System.Drawing.Size(174, 19);
+            this.txtSampleName.SkinTxt.TabIndex = 0;
+            this.txtSampleName.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSampleName.SkinTxt.WaterText = "请输入名称";
+            this.txtSampleName.TabIndex = 3;
+            this.txtSampleName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSampleName.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSampleName.WaterText = "请输入名称";
+            this.txtSampleName.WordWrap = true;
             // 
             // label3
             // 
@@ -255,47 +266,47 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "名称：";
             // 
-            // skinTextBox1
+            // txtSampleCode
             // 
-            this.skinTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.skinTextBox1.DownBack = null;
-            this.skinTextBox1.Icon = null;
-            this.skinTextBox1.IconIsButton = false;
-            this.skinTextBox1.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.IsPasswordChat = '\0';
-            this.skinTextBox1.IsSystemPasswordChar = false;
-            this.skinTextBox1.Lines = new string[0];
-            this.skinTextBox1.Location = new System.Drawing.Point(125, 43);
-            this.skinTextBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.skinTextBox1.MaxLength = 32767;
-            this.skinTextBox1.MinimumSize = new System.Drawing.Size(28, 28);
-            this.skinTextBox1.MouseBack = null;
-            this.skinTextBox1.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.skinTextBox1.Multiline = false;
-            this.skinTextBox1.Name = "skinTextBox1";
-            this.skinTextBox1.NormlBack = null;
-            this.skinTextBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.skinTextBox1.ReadOnly = false;
-            this.skinTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.skinTextBox1.Size = new System.Drawing.Size(185, 28);
+            this.txtSampleCode.BackColor = System.Drawing.Color.Transparent;
+            this.txtSampleCode.DownBack = null;
+            this.txtSampleCode.Icon = null;
+            this.txtSampleCode.IconIsButton = false;
+            this.txtSampleCode.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSampleCode.IsPasswordChat = '\0';
+            this.txtSampleCode.IsSystemPasswordChar = false;
+            this.txtSampleCode.Lines = new string[0];
+            this.txtSampleCode.Location = new System.Drawing.Point(125, 43);
+            this.txtSampleCode.Margin = new System.Windows.Forms.Padding(0);
+            this.txtSampleCode.MaxLength = 32767;
+            this.txtSampleCode.MinimumSize = new System.Drawing.Size(28, 28);
+            this.txtSampleCode.MouseBack = null;
+            this.txtSampleCode.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.txtSampleCode.Multiline = false;
+            this.txtSampleCode.Name = "txtSampleCode";
+            this.txtSampleCode.NormlBack = null;
+            this.txtSampleCode.Padding = new System.Windows.Forms.Padding(5);
+            this.txtSampleCode.ReadOnly = false;
+            this.txtSampleCode.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSampleCode.Size = new System.Drawing.Size(185, 28);
             // 
             // 
             // 
-            this.skinTextBox1.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.skinTextBox1.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.skinTextBox1.SkinTxt.ForeColor = System.Drawing.Color.Black;
-            this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(175, 18);
-            this.skinTextBox1.SkinTxt.TabIndex = 0;
-            this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.SkinTxt.WaterText = "请输入编号";
-            this.skinTextBox1.TabIndex = 1;
-            this.skinTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.skinTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinTextBox1.WaterText = "请输入编号";
-            this.skinTextBox1.WordWrap = true;
+            this.txtSampleCode.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSampleCode.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSampleCode.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.txtSampleCode.SkinTxt.ForeColor = System.Drawing.Color.Black;
+            this.txtSampleCode.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.txtSampleCode.SkinTxt.Name = "BaseText";
+            this.txtSampleCode.SkinTxt.Size = new System.Drawing.Size(175, 18);
+            this.txtSampleCode.SkinTxt.TabIndex = 0;
+            this.txtSampleCode.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSampleCode.SkinTxt.WaterText = "请输入编号";
+            this.txtSampleCode.TabIndex = 1;
+            this.txtSampleCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSampleCode.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.txtSampleCode.WaterText = "请输入编号";
+            this.txtSampleCode.WordWrap = true;
             // 
             // label1
             // 
@@ -307,17 +318,6 @@
             this.label1.Size = new System.Drawing.Size(44, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "编号：";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(72, 134);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "*";
             // 
             // FrmSampleEdit
             // 
@@ -346,11 +346,11 @@
         private CCWin.SkinControl.SkinButton btnSave;
         private CCWin.SkinControl.SkinCheckBox chkIsPass;
         private CCWin.SkinControl.SkinButton btnClose;
-        private CCWin.SkinControl.SkinTextBox skinTextBox4;
+        private CCWin.SkinControl.SkinTextBox txtSpell;
         private System.Windows.Forms.Label label4;
-        private CCWin.SkinControl.SkinTextBox skinTextBox3;
+        private CCWin.SkinControl.SkinTextBox txtSampleName;
         private System.Windows.Forms.Label label3;
-        private CCWin.SkinControl.SkinTextBox skinTextBox1;
+        private CCWin.SkinControl.SkinTextBox txtSampleCode;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
     }

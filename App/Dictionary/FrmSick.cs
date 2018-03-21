@@ -27,11 +27,11 @@ namespace App.Dictionary
         //加载
         private void FrmSick_Load(object sender, EventArgs e)
         {
-            showDate();
+            showData();
         }
         //*******************************************************
         //显示数据
-        public void showDate()
+        public void showData()
         {
             DataTable db = new ModSick().setWhere("id > 0", true).getSelect();
             if (db == null)
@@ -54,14 +54,28 @@ namespace App.Dictionary
             }
         }
 
+        //************************************************************
+        // 添加：
         private void btnInsert_Click(object sender, EventArgs e)
         {
             FrmSickEdit frm = new FrmSickEdit();
-            frm.ShowDialog();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
+        
+        //************************************************************
+        // 修改：
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            FrmSickEdit frm = new FrmSickEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
+        //************************************************************
+        // 关闭当前窗体：
+        private void btnClose_Click(object sender, EventArgs e) {
             this.Close();
         }
     }

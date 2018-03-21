@@ -53,15 +53,31 @@ namespace App.Dictionary
                 grd.Rows[intIndex].Cells[1].Selected = true;
             }
         }
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            FrmPart frm = new FrmPart();
-            frm.ShowDialog();
+
+        //************************************************************
+        // 添加：
+        private void btnInsert_Click(object sender, EventArgs e) {
+            FrmPartEdit frm = new FrmPartEdit();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
+        //************************************************************
+        // 修改：
+        
+
+        //************************************************************
+        // 关闭当前窗体：
+        private void btnClose_Click(object sender, EventArgs e) {
             this.Close();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            FrmPartEdit frm = new FrmPartEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
         }
     }
 }

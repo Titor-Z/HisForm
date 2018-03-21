@@ -53,5 +53,19 @@ namespace App.Dictionary
                 grd.Rows[intIndex].Cells[1].Selected = true;
             }
         }
+
+        private void btnInsert_Click(object sender, EventArgs e) {
+            FrmMedicareTypeEdit frm = new FrmMedicareTypeEdit();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            FrmMedicareTypeEdit frm = new FrmMedicareTypeEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
     }
 }

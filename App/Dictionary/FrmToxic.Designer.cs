@@ -34,15 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmToxic));
             this.grd = new CCWin.SkinControl.SkinDataGridView();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.skinToolStrip1 = new CCWin.SkinControl.SkinToolStrip();
             this.btnInsert = new System.Windows.Forms.ToolStripButton();
             this.btnUpdate = new System.Windows.Forms.ToolStripButton();
             this.btnRefresh = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.ToolStripButton();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.skinToolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -102,6 +102,35 @@
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TOXICCODE";
+            this.Column1.HeaderText = "毒理编码";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TOXICNAME";
+            this.Column2.HeaderText = "毒理名称";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "ISPASS";
+            this.Column4.HeaderText = "是否可用";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // skinToolStrip1
             // 
@@ -177,6 +206,7 @@
             this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -200,35 +230,6 @@
             this.btnClose.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "TOXICCODE";
-            this.Column1.HeaderText = "毒理编码";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TOXICNAME";
-            this.Column2.HeaderText = "毒理名称";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "ISPASS";
-            this.Column4.HeaderText = "是否可用";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // FrmToxic
             // 

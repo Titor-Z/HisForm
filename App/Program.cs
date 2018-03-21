@@ -53,7 +53,7 @@ namespace App {
             //Application.Run(new FrmAntibiosisLevel());
             //Application.Run(new FrmAssayTemplate());
             //Application.Run(new FrmCity());
-            Application.Run(new FrmDrug());
+            //Application.Run(new FrmUsage());
 			//Application.Run(new App.FrmLogin());
 			///Application.Run(new App.FrmMain());
 

@@ -258,6 +258,7 @@
             this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -314,7 +315,7 @@
             // 
             // Column5
             // 
-            this.Column5.DataPropertyName = "SICKSPELL";
+            this.Column5.DataPropertyName = "SPELL";
             this.Column5.HeaderText = "拼音";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;

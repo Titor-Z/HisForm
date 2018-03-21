@@ -23,12 +23,14 @@ namespace App.Dictionary
         {
             InitializeComponent();
         }
+
         //****************************************************
         //加载
         private void FrmUsage_Load(object sender, EventArgs e)
         {
             showData();
         }
+
         //****************************************************
         //调用数据
         public void showData()
@@ -54,14 +56,29 @@ namespace App.Dictionary
             }
         }
 
+        //************************************************************
+        // 添加：
         private void btnInsert_Click(object sender, EventArgs e)
         {
             FrmUsageEdit frm = new FrmUsageEdit();
-            frm.ShowDialog();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        //************************************************************
+        // 修改：
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
+            FrmUsageEdit frm = new FrmUsageEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
+
+        //************************************************************
+        // 关闭当前窗体：
+        private void btnClose_Click(object sender, EventArgs e) {
             this.Close();
         }
     }

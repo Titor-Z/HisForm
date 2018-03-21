@@ -122,6 +122,7 @@
             this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 

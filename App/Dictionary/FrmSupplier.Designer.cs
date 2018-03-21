@@ -268,6 +268,7 @@
             this.btnUpdate.Text = "修改(&U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -316,50 +317,50 @@
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "SUPPLIERSPELL";
+            this.Column3.DataPropertyName = "spell";
             this.Column3.HeaderText = "拼音";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column5
             // 
-            this.Column5.DataPropertyName = "SUPPLIERADDR";
+            this.Column5.DataPropertyName = "address";
             this.Column5.HeaderText = "地址";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
             // Column6
             // 
-            this.Column6.DataPropertyName = "SUPPLIERZIPCODE";
+            this.Column6.DataPropertyName = "post";
             this.Column6.HeaderText = "邮编\t";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.DataPropertyName = "SUPPLIERTEL";
+            this.Column4.DataPropertyName = "tel";
             this.Column4.HeaderText = "电话";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
             // Column7
             // 
-            this.Column7.DataPropertyName = "SUPPLIERLINKMAN";
+            this.Column7.DataPropertyName = "linkman";
             this.Column7.HeaderText = "联系人\t";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
             // Column8
             // 
-            this.Column8.DataPropertyName = "SUPPLIERBANKACCOUNT";
+            this.Column8.DataPropertyName = "bankCode";
             this.Column8.HeaderText = "银行账号";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
             // 
             // Column9
             // 
-            this.Column9.DataPropertyName = "SUPPLIERACCOUNTHOLDER";
-            this.Column9.HeaderText = "开户人";
+            this.Column9.DataPropertyName = "bankName";
+            this.Column9.HeaderText = "开户行";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             // 

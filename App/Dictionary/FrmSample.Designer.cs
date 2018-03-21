@@ -57,6 +57,7 @@
             this.btnInsert.Size = new System.Drawing.Size(48, 37);
             this.btnInsert.Text = "添加&(I)";
             this.btnInsert.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
@@ -68,6 +69,7 @@
             this.btnUpdate.Text = "修改&(U)";
             this.btnUpdate.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnRefresh
             // 
@@ -143,7 +145,6 @@
             this.skinToolStrip1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
             this.skinToolStrip1.TitleRadius = 4;
             this.skinToolStrip1.TitleRadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.skinToolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.skinToolStrip1_ItemClicked);
             // 
             // grd
             // 
@@ -201,7 +202,6 @@
             this.grd.TitleBack = null;
             this.grd.TitleBackColorBegin = System.Drawing.Color.White;
             this.grd.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            this.grd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_CellContentClick);
             // 
             // id
             // 
@@ -227,7 +227,7 @@
             // 
             // Column3
             // 
-            this.Column3.DataPropertyName = "SAMPLESPLLE";
+            this.Column3.DataPropertyName = "SPLLE";
             this.Column3.HeaderText = "拼音";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;

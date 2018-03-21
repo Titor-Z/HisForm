@@ -49,13 +49,30 @@ namespace App.Dictionary {
                 grd.Rows[intIndex].Cells[1].Selected = true;
             }
         }
-		private void btnInsert_Click(object sender, EventArgs e) {
-			FrmToxicEdit frm = new FrmToxicEdit();
-			frm.ShowDialog();
-		}
 
-		private void btnClose_Click(object sender, EventArgs e) {
-			this.Close();
-		}
-	}
+        //************************************************************
+        // 添加：
+        private void btnInsert_Click(object sender, EventArgs e) {
+            FrmToxicEdit frm = new FrmToxicEdit();
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }        
+        
+        //************************************************************
+        // 修改：
+        private void btnUpdate_Click(object sender, EventArgs e) {
+            FrmToxicEdit frm = new FrmToxicEdit(Convert.ToInt32(grd.CurrentRow.Cells["id"].Value));
+            if (frm.ShowDialog() == DialogResult.OK) {
+                showData();
+            }
+        }
+
+
+        //************************************************************
+        // 关闭当前窗体：
+        private void btnClose_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+    }
 }
